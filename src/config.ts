@@ -49,6 +49,8 @@ export const Settings = {
     },
 
     Comment: {
+        // Please note that the environment value here is `string` type on Cloudflare Pages
+        // If you want to disable the comment system, please delete the `COMMENT_ENABLE` environment variable not just set it to `false`.
         enable: !!(import.meta.env.COMMENT_ENABLE),
 
         // please visit https://giscus.app/ to learn how to configure it.
@@ -65,6 +67,8 @@ export const Settings = {
 
     Assets: {
         // If you don't want to upload the build assert(image/js/css/etc...) to anywhere, just set this to false
+        // Please note that the environment value here is `string` type on Cloudflare Pages
+        // If you want to disable the comment system, please delete the `S3_ENABLE` environment variable not just set it to `false`.
         uploadAssetsToS3: !!(import.meta.env.S3_ENABLE),
         config: {
             // see https://github.com/syhily/astro-uploader to get how to configure the uploader,
