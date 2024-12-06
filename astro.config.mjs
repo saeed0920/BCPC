@@ -52,6 +52,6 @@ export default defineConfig({
         // see https://docs.astro.build/en/reference/configuration-reference/#buildassets
         assets: 'assets',
         // see https://docs.astro.build/en/reference/configuration-reference/#buildassetsprefix
-        assetsPrefix: process.env.S3_ENABLE ? 'https://images.godruoyi.com/gblog' : '',
+        assetsPrefix: import.meta.env.S3_ENABLE ? 'https://images.godruoyi.com/gblog' : '',
     },
 })
