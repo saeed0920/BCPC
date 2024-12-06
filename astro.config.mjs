@@ -8,12 +8,19 @@ import { SITE } from './src/config.ts'
 import { remarkReadingTime } from './src/support/plugins.ts'
 import { uploadAssetsToS3 } from './src/support/uploader.ts'
 
+console.log('process.env.S3_ENABLE and import.meta.env.S3_ENABLE')
+console.log(process.env.S3_ENABLE)
+console.log(!!process.env.S3_ENABLE)
+console.log(import.meta.env.S3_ENABLE)
+console.log(!!import.meta.env.S3_ENABLE)
+console.log('process.env.S3_ENABLE and import.meta.env.S3_ENABLE')
+
 export default defineConfig({
     site: SITE.url,
     image: {
         // If you don't want to optimize images during the BUILD process,
         // you can open this comment. It will significantly reduce the build time but won't optimize any images anymore.
-        service: (!!(import.meta.env.ASTRO_IMAGE_OPTIMIZE) || !!(process.env.ASTRO_IMAGE_OPTIMIZE)) ? sharpImageService() : passthroughImageService(),
+        service: (!!import.meta.env.ASTRO_IMAGE_OPTIMIZE || !!process.env.ASTRO_IMAGE_OPTIMIZE) ? sharpImageService() : passthroughImageService(),
     },
     integrations: [
         partytown(),
@@ -52,6 +59,6 @@ export default defineConfig({
         // see https://docs.astro.build/en/reference/configuration-reference/#buildassets
         assets: 'assets',
         // see https://docs.astro.build/en/reference/configuration-reference/#buildassetsprefix
-        assetsPrefix: (!!(import.meta.env.S3_ENABLE) || !!(process.env.S3_ENABLE)) ? 'https://images.godruoyi.com/gblog' : '',
+        assetsPrefix: (!!import.meta.env.S3_ENABLE || !!process.env.S3_ENABLE) ? 'https://images.godruoyi.com/gblog' : '',
     },
 })
