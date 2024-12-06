@@ -22,7 +22,7 @@ const { Content, remarkPluginFrontmatter } = await post.render()
 
 const category: CollectionEntry<'categories'> = (await getCollection('categories')).filter(
     c => c.slug === post.data.category,
-).pop()
+).pop() as CollectionEntry<'categories'>
 
 const tags = post.data.tags ?? [category.slug]
 const URL = Astro.url.href

@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, passthroughImageService } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import tailwind from '@astrojs/tailwind'
 import react from '@astrojs/react'
@@ -13,7 +13,7 @@ export default defineConfig({
     image: {
         // If you don't want to optimize images during the BUILD process,
         // you can open this comment. It will significantly reduce the build time but won't optimize any images anymore.
-        // service: passthroughImageService(),
+        service: import.meta.env.ASTRO_IMAGE_OPTIMIZE ? undefined : passthroughImageService(),
     },
     integrations: [
         partytown(),
@@ -52,6 +52,6 @@ export default defineConfig({
         // see https://docs.astro.build/en/reference/configuration-reference/#buildassets
         assets: 'assets',
         // see https://docs.astro.build/en/reference/configuration-reference/#buildassetsprefix
-        assetsPrefix: process.env.S3_ENABLE ? 'https://images.godruoyi.com/gblog' : '',
+        assetsPrefix: import.meta.env.S3_ENABLE ? 'https://images.godruoyi.com/gblog' : '',
     },
 })
