@@ -1,4 +1,4 @@
-import { defineConfig, passthroughImageService } from 'astro/config'
+import { defineConfig, passthroughImageService, sharpImageService } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import tailwind from '@astrojs/tailwind'
 import react from '@astrojs/react'
@@ -11,9 +11,10 @@ import { uploadAssetsToS3 } from './src/support/uploader.ts'
 export default defineConfig({
     site: SITE.url,
     image: {
-        // If you don't want to optimize images during the BUILD process,
-        // you can open this comment. It will significantly reduce the build time but won't optimize any images anymore.
-        service: import.meta.env.ASTRO_IMAGE_OPTIMIZE ? undefined : passthroughImageService(),
+        // If you don't want to optimize images during the BUILD process please set the ASTRO_IMAGE_OPTIMIZE environment variable to false
+        // Please note that the environment value here is `string` type on Cloudflare Pages,
+        // So please delete the environment variable directly if you want to disable the image optimization service
+        service: (!!import.meta.env.ASTRO_IMAGE_OPTIMIZE || !!process.env.ASTRO_IMAGE_OPTIMIZE) ? sharpImageService() : passthroughImageService(),
     },
     integrations: [
         partytown(),
@@ -52,6 +53,6 @@ export default defineConfig({
         // see https://docs.astro.build/en/reference/configuration-reference/#buildassets
         assets: 'assets',
         // see https://docs.astro.build/en/reference/configuration-reference/#buildassetsprefix
-        assetsPrefix: import.meta.env.S3_ENABLE ? 'https://images.godruoyi.com/gblog' : '',
+        assetsPrefix: (!!import.meta.env.S3_ENABLE || !!process.env.S3_ENABLE) ? 'https://images.godruoyi.com/gblog' : '',
     },
 })
