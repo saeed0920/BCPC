@@ -8,18 +8,12 @@ import { SITE } from './src/config.ts'
 import { remarkReadingTime } from './src/support/plugins.ts'
 import { uploadAssetsToS3 } from './src/support/uploader.ts'
 
-console.log('process.env.S3_ENABLE and import.meta.env.S3_ENABLE')
-console.log(process.env.S3_ENABLE)
-console.log(!!process.env.S3_ENABLE)
-console.log(import.meta.env.S3_ENABLE)
-console.log(!!import.meta.env.S3_ENABLE)
-console.log('process.env.S3_ENABLE and import.meta.env.S3_ENABLE')
-
 export default defineConfig({
     site: SITE.url,
     image: {
-        // If you don't want to optimize images during the BUILD process,
-        // you can open this comment. It will significantly reduce the build time but won't optimize any images anymore.
+        // If you don't want to optimize images during the BUILD process please set the ASTRO_IMAGE_OPTIMIZE environment variable to false
+        // Please note that the environment value here is `string` type on Cloudflare Pages,
+        // So please delete the environment variable directly if you want to disable the image optimization service
         service: (!!import.meta.env.ASTRO_IMAGE_OPTIMIZE || !!process.env.ASTRO_IMAGE_OPTIMIZE) ? sharpImageService() : passthroughImageService(),
     },
     integrations: [
