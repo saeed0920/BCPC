@@ -43,6 +43,7 @@ const friendsCollection = defineCollection({
             name: z.string(),
             description: z.string(),
             avatar: z.string(),
+            avatarDark: z.string().optional(),
             social: z.object({
                 twitter: z.string().optional(),
                 blog: z.string().optional(),

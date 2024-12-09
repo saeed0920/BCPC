@@ -12,7 +12,7 @@ if (friendsData?.length === 0) {
 const friends = friendsData[0].data
 ---
 
-<BaseLayout title="Godruoyi's fiends" description="Godruoyi and his friends">
+<BaseLayout title="Godruoyi Fiends" description="Godruoyi and his friends">
     <MainSection title="Hey Friends" subTitle="Email me if you want to show your link here." />
 
     <section class="mx-auto max-w-[85rem] px-4 py-8 sm:px-6 lg:px-8 mb-10 2xl:max-w-full">
@@ -23,9 +23,11 @@ const friends = friendsData[0].data
                         <div>
                             <div class="flex items-center gap-x-4">
                                 <img
-                                    class="rounded-full size-20"
+                                    data-light={f.avatar}
+                                    data-dark={f.avatarDark}
+                                    class="friend-avatar rounded-full size-20"
                                     src={f.avatar}
-                                    alt="Image Description"
+                                    alt={f.title}
                                 />
 
                                 <div class="grow">
@@ -126,4 +128,30 @@ const friends = friendsData[0].data
             }
         </div>
     </section>
+    <script is:inline>
+    function changeAvatar(event) {
+        const dark = event?.detail === 'dark'
+        Array.from(document.getElementsByClassName('friend-avatar')).forEach((avatar) => {
+            const darkAvatar = avatar.getAttribute('data-dark')
+            if (dark && darkAvatar) {
+                avatar.src = avatar.getAttribute('data-dark')
+            }
+            else {
+                avatar.src = avatar.getAttribute('data-light')
+            }
+        })
+    }
+    function getCurrentTheme() {
+        if (window.localStorage.getItem('hs_theme')) {
+            return window.localStorage.getItem('hs_theme') ?? 'default'
+        }
+
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default'
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        changeAvatar({ detail: getCurrentTheme() })
+
+        window.addEventListener('on-hs-appearance-change', changeAvatar)
+    })
+    </script>
 </BaseLayout>

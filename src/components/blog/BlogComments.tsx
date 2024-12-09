@@ -48,20 +48,20 @@ function BlogComments() {
         <div id={id} className="w-full">
             {mounted
                 ? (
-                    <Giscus
-                        id={id}
-                        repo={commentSetting.repo as Repo}
-                        repoId={commentSetting.repoId}
-                        category={commentSetting.category}
-                        categoryId={commentSetting.categoryId}
-                        mapping="title"
-                        reactionsEnabled="1"
-                        emitMetadata="0"
-                        inputPosition="top"
-                        lang="zh-CN"
-                        loading="lazy"
-                        theme={theme}
-                    />
+                        <Giscus
+                            id={id}
+                            repo={commentSetting.repo as Repo}
+                            repoId={commentSetting.repoId}
+                            category={commentSetting.category}
+                            categoryId={commentSetting.categoryId}
+                            mapping="title"
+                            reactionsEnabled="1"
+                            emitMetadata="0"
+                            inputPosition="top"
+                            lang="zh-CN"
+                            loading="lazy"
+                            theme={theme}
+                        />
                     )
                 : null}
         </div>
