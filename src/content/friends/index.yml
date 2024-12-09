@@ -1,20 +1,21 @@
-- avatar: 'https://tcxx.info/wp-content/themes/StarryW/images/bg/me.jpg'
+- avatar: 'https://yufan.me/logo.svg'
   social:
-    twitter: 'Tiancaixinxin'
-    blog: 'https://tcxx.info/'
-    github: 'TCXX'
-  title: '我不是天才，我只是甜菜。'
-  name: '甜欣屋'
-  description: '技术圈的欧阳娜娜，旅居美国硅谷，生命不息作死不止，探索人生无限可能，女权主义者，希望世界和平'
+    twitter: 'amehochan'
+    blog: 'https://yufan.me/links'
+    github: 'syhily'
+  title: '诗与梦想的远方'
+  avatarDark: 'https://yufan.me/logo-dark.svg'
+  name: '雨帆'
+  description: "A thoughtful guy living a simple life. Working for bread, studying for interests, and thinking for hope. Learned about just 8 programming languages for fun"
 
 - avatar: 'https://avatars.githubusercontent.com/u/21162238?v=4'
   social:
-    twitter: 'Tiancaixinxin'
+    twitter: 'quentin_hsu'
     blog: 'https://www.xqy404.com/'
     github: 'QuentinHsu'
   title: 'Web Developer'
   name: 'Quentin Hau'
-  description: '人生本就過的不愉快 那就來點羅曼蒂克'
+  description: "Life's tough, let's be romantic"
 
 - avatar: 'https://avatars.githubusercontent.com/u/6493255?v=4'
   social:
@@ -23,7 +24,7 @@
     github: 'draveness'
   title: '一个工程师'
   name: 'Draven'
-  description: 'Go 语言设计与实现作者，偶像'
+  description: 'Go 语言设计与实现作者'
 
 - avatar: 'https://pbs.twimg.com/profile_images/1598673328155262977/c_95AZZ8_400x400.jpg'
   social:
@@ -32,3 +33,12 @@
   title: 'dev adv@phpstorm'
   name: 'Brent Roose'
   description: 'All In PHP & Laravel'
+
+- avatar: 'https://images.godruoyi.com/gblog/bird.png'
+  social:
+    twitter: 'sppan24'
+    github: 'sppan24'
+    blog: "https://www.sppan24.cn"
+  title: 'Pan Bird'
+  name: 'Sppan'
+  description: 'A man and a Bird who knows everything'
