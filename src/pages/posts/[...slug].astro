@@ -20,8 +20,6 @@ type Props = CollectionEntry<'posts'>
 const post = Astro.props
 const { Content, remarkPluginFrontmatter, headings } = await post.render()
 
-console.log(headings)
-
 const category: CollectionEntry<'categories'> = (await getCollection('categories')).filter(
     c => c.slug === post.data.category,
 ).pop() as CollectionEntry<'categories'>
