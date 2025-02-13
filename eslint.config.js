@@ -16,6 +16,7 @@ export default antfu({
         'no-console': 'off',
         'curly': ['error', 'all'],
         'node/prefer-global/process': 'off',
+        'brace-style': ['error', '1tbs'],
     },
 
     jsonc: false,
