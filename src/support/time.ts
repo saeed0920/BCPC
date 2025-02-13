@@ -22,7 +22,14 @@ function formatDate(date: Date): string {
     const month = String(date.getMonth() + 1).padStart(2, '0')
     const day = String(date.getDate()).padStart(2, '0')
 
-    return `${year}/${month}/${day}`
+    return `${year}-${month}-${day}`
+}
+
+function formatDateTime(date: Date): string {
+    const hours = String(date.getHours()).padStart(2, '0')
+    const minutes = String(date.getMinutes()).padStart(2, '0')
+
+    return `${formatDate(date)} ${hours}:${minutes}`
 }
 
 function timeago(date?: Date): string {
@@ -39,4 +46,4 @@ function timeago(date?: Date): string {
     return format(date, 'timeago')
 }
 
-export { formatDate, timeago }
+export { formatDate, timeago, formatDateTime }

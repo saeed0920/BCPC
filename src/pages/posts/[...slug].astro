@@ -4,7 +4,7 @@ import BaseLayout from '@layouts/BaseLayout.astro'
 import BlogComments from '@components/blog/BlogComments'
 import BlogTOC from '@components/blog/BlogTOC.astro'
 import Image from '@components/ui/images/Image.astro'
-import { timeago } from '@support/time'
+import { formatDateTime } from '@support/time'
 import { SITE, Settings } from '@/config'
 
 export async function getStaticPaths() {
@@ -53,7 +53,7 @@ const ogImage = post.data.ogImage
         }],
     }}
 >
-    <div class="mx-auto max-w-5xl xl:max-w-5xl 2xl:max-w-7xl px-4 pb-12 pt-8 sm:px-6 lg:px-8 lg:pt-12">
+    <div class="mx-auto max-w-6xl px-4 pb-12 pt-8 sm:px-6 lg:px-8 lg:pt-12">
         <div class="relative w-full">
             <div class="shadow-none sm:shadow-sm mt-4 sm:mt-0">
                 <Image
@@ -91,7 +91,7 @@ const ogImage = post.data.ogImage
                                 </svg>
                             </li>
                             <li class="inline-flex items-center text-sm text-neutral-500 hover:text-neutral-600 focus:outline-none focus:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-400 dark:focus:text-neutral-400">
-                                {timeago(post.data.pubDate)}
+                                {formatDateTime(post.data.pubDate)}
                                 <svg
                                     class="flex-shrink-0 size-5 text-neutral-500 dark:text-neutral-600 mx-2"
                                     width="16"
@@ -113,7 +113,7 @@ const ogImage = post.data.ogImage
                         </ol>
                     </div>
 
-                    <article class="prose prose-blog sm:prose-lg dark:prose-invert max-w-none">
+                    <article class="prose prose-blog sm:prose-lg dark:prose-invert max-w-none text-justify">
                         <Content />
                     </article>
 
@@ -148,9 +148,13 @@ const ogImage = post.data.ogImage
                     </div>
                 )
             }
-            <div class="absolute hidden xl:block right-[-250px] 2xl:right-[-260px] w-[240px] top-0">
-                <BlogTOC headings={headings} />
-            </div>
+            {
+                post.data.toc && (
+                    <div class="absolute hidden 2xl:block right-[-250px] 2xl:right-[-260px] w-[240px] top-0">
+                        <BlogTOC headings={headings} />
+                    </div>
+                )
+            }
         </div>
     </div>
     <style is:inline>

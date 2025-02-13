@@ -21,6 +21,8 @@ const posts = defineCollection({
 
         tags: z.array(z.string()).optional(),
 
+        toc: z.boolean().optional(),
+
         // not use, just record this value since its from my previous blog system
         updatedDate: z.coerce.date().optional(),
         oldViewCount: z.number().optional(),

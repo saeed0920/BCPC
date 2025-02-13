@@ -5,6 +5,7 @@ pubDate: "2021-04-29 09:51:32"
 category: "laravel"
 banner: "@images/banners/xVs1eZ8ja9nLX6XO9EUolY7Zl0MbUTPTyH6FqQLl.png"
 tags: ["laravel"]
+toc: true
 oldViewCount: 8073
 oldKeywords: ["laravel,laravel-octane,swoole,roadrunner"]
 ---
