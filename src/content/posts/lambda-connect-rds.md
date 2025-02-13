@@ -3,6 +3,7 @@ title: "Lambda Connect RDS"
 description: "我们的目的是把 RDS 和 Lambda 放在同一个VPC 下，并且要支持 Lambda 访问 RDS，Lambda 可以访问 SecretManager，Lambda 可以访问 DynamoDB" 
 pubDate: "2024-05-21 17:47:00"
 category: "tool"
+toc: true
 banner: "@images/posts/lambda-rds/banner-1.jpg"
 ogImage: "@images/posts/lambda-rds/banner-1.jpg"
 tags: ["AWS", "Lambda", "RDS"]

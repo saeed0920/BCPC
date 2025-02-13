@@ -6,6 +6,7 @@ category: "laravel"
 banner: "@images/banners/GxdPb3nbyxlWC8cEekUxTvsRVcVx1Sb9riEa4NNx.png"
 tags: ["laravel"]
 oldViewCount: 3219
+toc: true
 selected: true
 oldKeywords: ["laravel,php,native-php"]
 ---

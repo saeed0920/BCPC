@@ -6,6 +6,7 @@ category: "whatis"
 banner: "@images/posts/outbox-pattern/banner1.jpg"
 banner2: "@images/posts/outbox-pattern/banner1.png"
 tags: ["技术"]
+toc: true
 ---
 
 早上在群里看到有同事在问关于 Outbox Pattern 的问题，而在此之前我对此一无所知，我甚至还错误的发了一些毫不相干的回复，那就姑且把 Outbox Pattern 当作今天 TIL 的对象吧，下面是本次学习的记录。

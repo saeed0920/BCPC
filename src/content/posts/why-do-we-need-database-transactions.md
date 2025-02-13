@@ -5,6 +5,7 @@ pubDate: "2021-08-03 07:41:41"
 category: "mysql"
 banner: "@images/banners/jFCjp0lKCELdUeIJYNFqfp5BgU1BaVZYbdwmVLJh.jpeg"
 tags: ["mysql"]
+toc: true
 oldViewCount: 3519
 oldKeywords: ["事务,ACID,Atomicity,Consistency,Isolation,Read Committed,Snapshot,隔离级别"]
 ---
