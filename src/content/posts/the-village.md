@@ -3,8 +3,8 @@ title: "没人抬"
 description: "乡里人怕的，是自己死了后，找不到人抬，我不明白。"
 pubDate: "2024-08-09 13:54:00"
 category: "life"
-banner: "@images/posts/the-village/banner2.png"
-banner2: "@images/posts/the-village/banner1.png"
+banner: "https://images.godruoyi.com/gblog/images/posts/the-village/banner2.avif"
+banner2: "https://images.godruoyi.com/gblog/images/posts/the-village/banner1.avif"
 tags: ["生活"]
 ---
 

@@ -3,8 +3,8 @@ title: "美国"
 description: "昨天晚上开了一个小时的会，受益良多；以下只是我的感悟，请不要信以为真。"
 pubDate: "2024-07-05 16:16:00"
 category: "life"
-banner: "@images/posts/america/banner.png"
-banner2: "@images/posts/america/banner2.png"
+banner: "https://images.godruoyi.com/gblog/images/posts/america/banner.avif"
+banner2: "https://images.godruoyi.com/gblog/images/posts/america/banner2.avif"
 tags: ["生活", "感悟"]
 ---
 
