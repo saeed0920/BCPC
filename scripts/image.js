@@ -4,7 +4,7 @@
  *
  * This script will also update the final image path in the markdown files.
  *
- * usage: node scripts/image.js
+ * usage: node scripts/image.js [--force]
  *
  * Also see the global variables in the script.
  */
@@ -19,6 +19,7 @@ const imageDir = ['src/images/banners', 'src/images/posts'].map(dir =>
     path.join(process.cwd(), dir),
 )
 const contentDir = path.join(process.cwd(), 'src/content/posts')
+const force = process.argv.includes('--force')
 
 // see https://docs.rs/opendal/latest/opendal/services/struct.S3.html#configuration
 const s3Options = {
@@ -110,7 +111,7 @@ class Imager {
         const sharp = (await import('sharp')).default
 
         try {
-            return await sharp(image).resize(1600, 750, {
+            return await sharp(image).resize(1500, 750, {
                 fit: 'cover',
                 position: 'center',
             }).avif({
@@ -130,6 +131,11 @@ class Imager {
      * @returns {Promise<void>}
      */
     async excludeExistsImages() {
+        if (force) {
+            this.newImages = this.images
+            return
+        }
+
         for (const img of this.images) {
             const file = img.replace(/.*\/images\//, 'images/').replace(/\.\w+$/, NewFormat)
 
