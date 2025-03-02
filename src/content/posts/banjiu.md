@@ -3,8 +3,8 @@ title: "办酒"
 description: "许老三今天吃了五家人户的酒，送出去了八百块钱。"
 pubDate: "2024-01-31 08:15:49"
 category: "life"
-banner: "@images/banners/QczVNWs0YPOPfntslMjyHj6WSovweesFXsdZuNKL.jpeg"
-banner2: "@images/banners/banjiu-2.png"
+banner: "https://images.godruoyi.com/gblog/images/banners/QczVNWs0YPOPfntslMjyHj6WSovweesFXsdZuNKL.avif"
+banner2: "https://images.godruoyi.com/gblog/images/banners/banjiu-2.avif"
 tags: ["life"]
 oldViewCount: 774
 oldKeywords: ["办酒,送礼"]

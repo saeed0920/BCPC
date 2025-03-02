@@ -3,8 +3,8 @@ title: "老爸的日记"
 description: "2021 年老爸老妈第二次前往上海打工，一去就被关在赵屯两个多月，期间只能吃救济，菜只能依赖周边农户。每到晚上，人们拿着肥料口袋去田里偷蚕豆。"
 pubDate: "2024-07-26 16:00:00"
 category: "life"
-banner: "@images/posts/dads-diary/banner2.png"
-banner2: "@images/posts/dads-diary/banner1.jpg"
+banner: "https://images.godruoyi.com/gblog/images/posts/dads-diary/banner2.avif"
+banner2: "https://images.godruoyi.com/gblog/images/posts/dads-diary/banner1.avif"
 tags: ["life"]
 ---
 
