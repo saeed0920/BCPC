@@ -11,7 +11,7 @@ oldKeywords: ["Godruoyi,二愣的闲谈杂鱼"]
 
 Godruoyi，15 年毕业于西南大学计算机专业，Laravel 爱好者；目前靠 Go 养家糊口，抽空学习 Rust，全职远程中。由于看起来像二愣，说起话来也像二愣，朋友们都叫我二愣。
 
-喜欢捣鼓各种工具，但效率也不高；喜欢买书，一定是纸质书籍，爱看小文学，伪文艺青年，你也可以查看 [我的阅读清单](https://godruoyi.com/posts/my-books)；性格有点内向，喜欢写写写写，虽然文笔也不好，有时候也爱 [发发闹骚](https://godruoyi.com/categories/life)，欢迎大家关注我的 GitHub [https://github.com/godruoyi](https://github.com/godruoyi)。
+喜欢捣鼓各种工具，但效率也不高；喜欢买书，一定是纸质书籍，爱看小文学，伪文艺青年，你也可以查看 [我的阅读清单](https://godruoyi.com/posts/my-books)；性格有点内向，喜欢写写写写，虽然文笔也不好，~~有时候~~很多时候都爱 [发发闹骚](https://godruoyi.com/categories/life)，我的 GitHub [https://github.com/godruoyi](https://github.com/godruoyi)。
 
 如果你想了解我更多的信息，这里有一些我觉得写得还不错的文章，http://godruoyi.com/posts#selected-articel 。
 
@@ -29,6 +29,7 @@ Godruoyi，15 年毕业于西南大学计算机专业，Laravel 爱好者；目�
 *  [📰 RESTful API 设计规范](https://godruoyi.com/posts/the-resetful-api-design-specification)
 *  [🐶 Readog is a browser extension that can save your links to any platform](https://github.com/godruoyi/readog)
 *  [🎈 An beautiful blog built with Astro](https://github.com/godruoyi/gblog)
+*  [🐝 An Raycast extension that allows you to process images using a customizable workflow](https://github.com/godruoyi/imageflow)
 
 ## 关于这个博客
 
@@ -38,8 +39,8 @@ Godruoyi，15 年毕业于西南大学计算机专业，Laravel 爱好者；目�
 
 ## 联系我
 
-最近经常在[刷推](https://twitter.com/godruoyi)，你也可以在下面的网站或联系方式中找到我。
+最近经常在刷推，你也可以在下面的网站或联系方式中找到我。
 
-* [Laravel China](https://learnku.com/users/5359)
 * Email: godruoyi@gmail.com
 * WechatID: Youji_
+* [Laravel China](https://learnku.com/users/5359)
