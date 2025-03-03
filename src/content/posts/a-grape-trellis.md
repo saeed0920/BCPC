@@ -52,3 +52,8 @@ tags: ["life"]
 ![葡萄架](https://images.godruoyi.com/gblog/images/banners/d5c487cf-c279-4170-b935-de57c17466f6.avif)
 
 虽然很简陋，但我期望它今年能结果。
+
+## 老丈人系列
+
+*  [老丈人的三轮车](https://godruoyi.com/posts/dads-tricycle/)
+*  [一条甲鱼](https://godruoyi.com/posts/a-turtle/)
