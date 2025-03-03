@@ -4,7 +4,6 @@ description: "早上在群里看到有同事在问关于 Outbox Pattern 的问�
 pubDate: "2024-08-04 15:43:00"
 category: "whatis"
 banner: "https://images.godruoyi.com/gblog/images/posts/outbox-pattern/banner1.avif"
-banner2: "https://images.godruoyi.com/gblog/images/posts/outbox-pattern/banner1.avif"
 tags: ["技术"]
 toc: true
 ---

@@ -13,7 +13,7 @@ const posts = blogs.slice(0, 5)
 ---
 
 {
-    posts.map((b, index) => index % 2 === 0
+    posts.map((b, index) => (index !== 4 && index % 2 === 0) || index === 3
         ? (
             <LeftSection
                 title={b.data.title}
@@ -32,8 +32,6 @@ const posts = blogs.slice(0, 5)
                 btnExists={true}
                 btnTitle="Read More"
                 btnURL=`/posts/${b.slug}`
-                img={b.data.banner}
-                imgAlt={b.data.title}
                 single={!b.data.banner2}
                 imgOne={b.data.banner}
                 imgOneAlt={b.data.title}
