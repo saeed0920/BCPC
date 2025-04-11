@@ -46,7 +46,6 @@ const categories = (await getCollection('categories')).sort((a, b) => {
     const rowSpan = pattern.row
     const rowSpanClass = rowSpan > 1 ? `row-span-${rowSpan}` : 'row-span-1'
     const gridItemClass = `col-span-${smColSpan} md:col-span-${mdColSpan} ${rowSpanClass}`
-    console.log(gridItemClass, pattern)
     return {
         ...c,
         posts,
