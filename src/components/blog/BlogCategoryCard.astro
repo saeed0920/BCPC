@@ -24,18 +24,18 @@ const formatedDescription = isSingleItem ? `No description available` : descript
     data-astro-prefetch="false"
 >
     <div
-        class="rounded-xl group shadow-md overflow-hidden transition-all duration-300 cursor-pointer h-full flex flex-col min-h-[200px] bg-white dark:bg-neutral-900/30"
+        class="rounded-xl group shadow-md overflow-hidden transition-all duration-300 cursor-pointer h-full flex flex-col min-h-[220px] bg-white dark:bg-neutral-900/30"
     >
         <div
             class="overflow-hidden relative flex-grow min-h-0"
         >
             <div
-                class="absolute inset-0 p-3 md:p-4 lg:p-5 flex flex-col justify-end bg-gradient-to-t to-transparent"
+                class="absolute inset-1 p-3 md:p-4 lg:p-5 flex flex-col justify-end bg-gradient-to-t to-transparent"
             >
                 <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-700 dark:text-neutral-350 group-hover:text-orange-600 dark:group-hover:text-orange-300">
                     {title}
                 </h2>
-                <p class="mb-4 max-w-prose text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg group-hover:text-neutral-500 dark:group-hover:text-neutral-300">
+                <p class=`mb-4 ${isSingleItem ? 'hidden lg:block' : ''} max-w-prose text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg group-hover:text-neutral-500 dark:group-hover:text-neutral-300`>
                     {formatedDescription}
                 </p>
                 <div
