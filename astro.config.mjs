@@ -3,6 +3,8 @@ import mdx from '@astrojs/mdx'
 import tailwind from '@astrojs/tailwind'
 import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
+import rehypePrettyCode from 'rehype-pretty-code'
+import { transformerCopyButton } from '@rehype-pretty/transformers'
 import partytown from '@astrojs/partytown'
 import { SITE } from './src/config.ts'
 import { remarkReadingTime } from './src/support/plugins.ts'
@@ -33,6 +35,20 @@ export default defineConfig({
         uploadAssetsToS3(),
     ],
     markdown: {
+        syntaxHighlight: false,
+        rehypePlugins: [
+            [rehypePrettyCode, {
+                keepBackground: true,
+                transformers: [
+                    transformerCopyButton(
+                        {
+                            visibility: 'always',
+                            feedbackDuration: 2500,
+                        },
+                    ),
+                ],
+            }],
+        ],
         remarkPlugins: [remarkReadingTime],
         shikiConfig: {
             theme: 'github-light',
