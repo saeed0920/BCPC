@@ -7,6 +7,7 @@ banner: "https://images.godruoyi.com/gblog/images/banners/1JNl1w2oiX8z09g2BqKFpD
 tags: ["life"]
 oldViewCount: 3424
 oldKeywords: ["技术,如何成为程序员"]
+selected: true
 ---
 
 2011 年 9 月，在姐姐的陪同下，我来到了隔壁山城——重庆，准备入学报道。那是作者第一次离省。

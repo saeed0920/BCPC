@@ -6,6 +6,7 @@ category: "life"
 banner2: "https://images.godruoyi.com/gblog/images/banners/52b7d4f7-eca0-4e21-bdae-0436f0ae255a.avif"
 banner: "https://images.godruoyi.com/gblog/images/banners/d9c246b4-2670-4cc7-836a-e77768c081e1.avif"
 tags: ["life"]
+selected: true
 ---
 
 老丈人的院塘旁边有一颗葡萄树，几十年了，却没人吃到过葡萄。

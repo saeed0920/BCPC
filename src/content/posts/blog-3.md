@@ -6,7 +6,6 @@ category: "life"
 banner: "https://images.godruoyi.com/gblog/images/posts/blog-3/banner-1.avif"
 banner2: "https://images.godruoyi.com/gblog/images/posts/blog-3/banner-2.avif"
 tags: ["Astro", "Blog"]
-selected: true
 ---
 
 最近花了一些时间将我的博客迁移到了 Astro 平台，我感觉整个过程挺美妙的，很喜欢 Astro。
