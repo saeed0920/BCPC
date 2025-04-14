@@ -6,6 +6,7 @@ category: "life"
 banner: "https://images.godruoyi.com/gblog/images/posts/the-village/banner2.avif"
 banner2: "https://images.godruoyi.com/gblog/images/posts/the-village/banner1.avif"
 tags: ["生活"]
+selected: true
 ---
 
 乡里人怕的，是自己死了后，找不到人抬，我不明白。

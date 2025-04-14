@@ -8,6 +8,7 @@ banner2: "https://images.godruoyi.com/gblog/images/banners/banjiu-2.avif"
 tags: ["life"]
 oldViewCount: 774
 oldKeywords: ["办酒,送礼"]
+selected: true
 ---
 
 许老三今天吃了五家人户的酒，送出去了八百块钱。
