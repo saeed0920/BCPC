@@ -26,9 +26,15 @@ export default defineConfig({
         react(),
         (await import('@playform/compress')).default({
             CSS: true,
-            HTML: true,
-            Image: false,
             JavaScript: true,
+            HTML: {
+                'html-minifier-terser': {
+                    collapseWhitespace: true,
+                    minifyCSS: false, // enable this will cause the CopyButton not work
+                    minifyJS: true,
+                },
+            },
+            Image: false,
             SVG: true,
             Logger: 2,
         }),
@@ -38,7 +44,7 @@ export default defineConfig({
         syntaxHighlight: false,
         rehypePlugins: [
             [rehypePrettyCode, {
-                keepBackground: true,
+                keepBackground: false,
                 transformers: [
                     transformerCopyButton(
                         {
@@ -50,14 +56,6 @@ export default defineConfig({
             }],
         ],
         remarkPlugins: [remarkReadingTime],
-        shikiConfig: {
-            theme: 'github-light',
-            themes: {
-                light: 'github-light',
-                dark: 'github-dark',
-            },
-            wrap: false,
-        },
     },
     devToolbar: {
         enabled: false,
