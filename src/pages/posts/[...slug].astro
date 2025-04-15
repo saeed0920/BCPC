@@ -158,10 +158,20 @@ const ogImage = post.data.ogImage
         </div>
     </div>
     <style is:inline>
-        html.dark .astro-code,
-        html.dark .astro-code span {
-            color: var(--shiki-dark) !important;
-            background-color: var(--shiki-dark-bg) !important;
+        pre {
+            background-color: #fff !important;
+        }
+        code, code span {
+            color: var(--shiki-light) !important;
+        }
+        html.dark {
+            pre {
+                background-color: #262626 !important;
+            }
+            code,
+            code span {
+                color: var(--shiki-dark) !important;
+            }
         }
     </style>
 </BaseLayout>
