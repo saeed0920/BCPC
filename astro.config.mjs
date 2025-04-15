@@ -3,6 +3,8 @@ import mdx from '@astrojs/mdx'
 import tailwind from '@astrojs/tailwind'
 import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
+import rehypePrettyCode from 'rehype-pretty-code'
+import { transformerCopyButton } from '@rehype-pretty/transformers'
 import partytown from '@astrojs/partytown'
 import { SITE } from './src/config.ts'
 import { remarkReadingTime } from './src/support/plugins.ts'
@@ -24,24 +26,36 @@ export default defineConfig({
         react(),
         (await import('@playform/compress')).default({
             CSS: true,
-            HTML: true,
-            Image: false,
             JavaScript: true,
+            HTML: {
+                'html-minifier-terser': {
+                    collapseWhitespace: true,
+                    minifyCSS: false, // enable this will cause the CopyButton not work
+                    minifyJS: true,
+                },
+            },
+            Image: false,
             SVG: true,
             Logger: 2,
         }),
         uploadAssetsToS3(),
     ],
     markdown: {
+        syntaxHighlight: false,
+        rehypePlugins: [
+            [rehypePrettyCode, {
+                keepBackground: false,
+                transformers: [
+                    transformerCopyButton(
+                        {
+                            visibility: 'always',
+                            feedbackDuration: 2500,
+                        },
+                    ),
+                ],
+            }],
+        ],
         remarkPlugins: [remarkReadingTime],
-        shikiConfig: {
-            theme: 'github-light',
-            themes: {
-                light: 'github-light',
-                dark: 'github-dark',
-            },
-            wrap: false,
-        },
     },
     devToolbar: {
         enabled: false,
