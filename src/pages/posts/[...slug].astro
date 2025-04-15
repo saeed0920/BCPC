@@ -158,20 +158,16 @@ const ogImage = post.data.ogImage
         </div>
     </div>
     <style is:inline>
-        pre {
-            background-color: #fff !important;
+        code[data-theme*=" "],
+        code[data-theme*=" "] span {
+          color: var(--shiki-light);
         }
-        code, code span {
-            color: var(--shiki-light) !important;
-        }
+
         html.dark {
-            pre {
-                background-color: #262626 !important;
-            }
-            code,
-            code span {
-                color: var(--shiki-dark) !important;
-            }
+          code[data-theme*=" "],
+          code[data-theme*=" "] span {
+            color: var(--shiki-dark);
+          }
         }
     </style>
 </BaseLayout>
