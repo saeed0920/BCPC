@@ -1,6 +1,6 @@
 import { DocSearch } from '@docsearch/react'
 
-import '@docsearch/css'
+//import '@docsearch/css'
 import './AlgoliaDocSearch.css'
 
 function AlgoliaDocSearch() {

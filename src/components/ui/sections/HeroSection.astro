@@ -33,7 +33,7 @@ interface Props {
         </h1>
         {subTitle && (
             <p class="mt-6 text-pretty text-lg leading-relaxed text-neutral-700 dark:text-neutral-400 lg:w-4/5">
-                {subTitle}
+            <Fragment set:html={subTitle} />
             </p>
         )}
 

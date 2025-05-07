@@ -29,3 +29,18 @@ export interface User {
     description: string
     social: Social
 }
+
+export interface TeamMember  {
+      username: string;
+      img: string;
+      description: string;
+};
+
+export interface TeamProfile {
+    teamName : string ,
+    headteamUsername : string,
+    headteamImg : string, 
+    headteamDescribtion : string,
+    teamnumber : number,
+    team : TeamMember[]
+}

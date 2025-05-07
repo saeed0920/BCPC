@@ -1,24 +1,24 @@
 {
-  "name": "godruoyi.com",
+  "name": "bcpc.ir",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "homepage": "https://godruoyi.com",
   "bugs": {
-    "url": "https://github.com/godruoyi/gblog/issues",
-    "email": "godruoyi@gmail.com"
+    "url": "https://github.com/saeed0920/BCPC.git",
+    "email": "sd.eed1381@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/godruoyi/gblog.git"
+    "url": "https://github.com/saeed0920/BCPC.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Godruoyi",
-    "email": "godruoyi@gmail.com",
-    "url": "https://godruoyi.com"
+    "name": "Saeed Abadiyan",
+    "email": "sd.eed1381@gmail.com",
+    "url": "https://bcpc.ir"
   },
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --port 3000",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
