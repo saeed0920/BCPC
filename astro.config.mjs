@@ -15,6 +15,7 @@ import { remarkReadingTime } from "./src/support/plugins.ts";
 import { uploadAssetsToS3 } from "./src/support/uploader.ts";
 
 export default defineConfig({
+    base : "BCPC",
     site: SITE.url,
     image: {
         // If you don't want to optimize images during the BUILD process please set the ASTRO_IMAGE_OPTIMIZE environment variable to false
