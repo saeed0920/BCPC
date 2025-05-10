@@ -10,6 +10,7 @@ export const SITE: Site = {
 
 export const NavigationLinks: NavigationLink[] = [
     //{ name: 'Posts', url: '/posts/' },
+    { name: "Home", url: "/" },
     { name: "Timeline", url: "/timeline/" },
     { name: "Contact", url: "/contact/" },
     { name: "About", url: "/about/" },
@@ -107,7 +108,7 @@ export const SEO = {
         name: SITE.title,
         description: SITE.description,
         isPartOf: {
-            "@type": "WebSite",
+           "@type": "WebSite",
             url: SITE.url,
             name: SITE.title,
             description: SITE.description,
