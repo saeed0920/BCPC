@@ -1,0 +1,66 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { SITE } from '@/config'
+const description = "About Us"
+---
+
+<BaseLayout
+    title="About"
+    description={description}
+    structuredData={{
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        'inLanguage': 'en-US',
+        '@id': URL,
+        'url': URL,
+        'name': `About - ${SITE.title}`,
+        'description': description,
+        'isPartOf': {
+            '@type': 'WebSite',
+            'url': SITE.url,
+            'name': SITE.title,
+            'description': SITE.description,
+        },
+    }}
+>
+    <section class="mt-10 lg:mt-10 px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+        <div class="mx-4 md:mx-5 mb-4 lg:mb-14 gap-2 flex flex-col">
+            <div class="flex flex-col-reverse justify-center md:flex-row items-center">
+                <p class="p-4 text-sm md:text-xl dark:text-white">Over the past two years, we've grown from a small post-COVID tech group into a creative, collaborative team. After workshops, tools, and shared growth,</p>
+                <div class="grid maxW grid-cols-2 grid-rows-[1fr,12rem] gap-2">
+                    <img class="col-span-2 imgShape" src="/src/images/about/7.jpg" alt="7"/>
+                    <img class="imgShape " src="/src/images/about/5.jpg" alt="5"/>
+                    <img class="imgShape " src="/src/images/about/6.jpg" alt="6"/>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse justify-center md:flex-row items-center">
+                <div class="grid maxW grid-cols-2 grid-rows-[1fr,12rem] gap-2">
+                    <img class="col-span-2 imgShape " src="/src/images/about/1.jpg" alt="7"/>
+                    <img class="imgShape " src="/src/images/about/2.jpg" alt="5"/>
+                    <img class="imgShape " src="/src/images/about/3.jpg" alt="6"/>
+                </div>
+                <p class="p-4 text-sm md:text-xl dark:text-white">Since then, we’ve organized workshops, built tools, and helped each other grow — both technically and personally.
+This event is the result of that effort, and we’re excited to finally share it with you.</p>
+            </div>
+            <h1 class="text-center mt-10 text-xl dark:text-white">Now, after all the growth and learning, we’re ready to take on something bigger — our <b>next contest<b/></h1>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+.maxW { 
+}
+.imgShape { 
+    transition : scale .3s ease-out;
+    &:hover {
+        scale : 1.3;
+        z-index : 2;
+    }
+    object-fit: cover;
+    border-radius : .5rem;
+    outline: solid orange .15rem;
+    @apply dark:outline-white outline-orange-300;
+    height:100%;
+    width:100%;
+}
+</style>

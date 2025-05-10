@@ -15,9 +15,7 @@
             "@layouts/*": ["layouts/*"],
             "@pages/*": ["pages/*"],
             "@support/*": ["support/*"],
-            "@images/*": [
-                "images/*"
-            ]
+            "@images/*": ["images/*"]
         }
     }
 }

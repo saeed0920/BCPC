@@ -1,0 +1,90 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { SITE } from '@/config'
+const description = "Contact Us" 
+
+import BaseLayout from "../layouts/BaseLayout.astro"
+const data = [
+  {
+    label: "Telegram",
+    src: "https://api.iconify.design/logos:telegram.svg",
+    link: "https://t.me/SSCEUBIR",
+  },
+  {
+    label: "Gmail",
+    src: "https://api.iconify.design/logos:google-gmail.svg",
+    link: "mailto:ssce.ub@gmail.com",
+    class : ""
+  },
+//  {
+//    label: "فرم ثبت نام",
+//    src: "https://api.iconify.design/simple-icons:googleforms.svg?color=%235458c4",
+//    link: "https://forms.gle/m7XjBsJc2NZ7KomC9",
+//  },
+];
+---
+
+<BaseLayout
+    title="About"
+    description={description}
+    structuredData={{
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        'inLanguage': 'en-US',
+        '@id': URL,
+        'url': URL,
+        'name': `About - ${SITE.title}`,
+        'description': description,
+        'isPartOf': {
+            '@type': 'WebSite',
+            'url': SITE.url,
+            'name': SITE.title,
+            'description': SITE.description,
+        },
+    }}
+>
+<section class=" mt-10 lg:mt-10 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 about-us flex flex-col h-full justify-between" dir="rtl">
+    <div class="mb-2">
+    </div>
+    <div class="flex flex-wrap justify-center items-center w-full self-center my-auto gap-4 ">
+    {(() => {
+      const items = [];
+      for (const link of data) {
+        items.push(
+        <a href={link.link} target="_blank" rel="noopener noreferrer" class="flex dark:text-white flex-col justify-center text-center items-center gap-4 md:gap-6 sm:w-[10rem] overflow-hidden rounded-lg dark:shadow-lg shadow-md hover:shadow-lg transition-shadow flex-wrap self-stretch text-sm md:text-md box p-4 w-[8rem] sm:p-[20px]">
+          <img src={link.src} class=" object-fill w-[2rem] sm:w-[3rem] md:w-[5rem]" />
+        {link.label}
+        </a>
+        );
+      }
+      return items;
+    })()}
+
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+.box{
+  position: relative;
+  box-sizing: border-box;
+}
+
+.box:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.2);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+</style>

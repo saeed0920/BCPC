@@ -1,7 +1,7 @@
-import { DocSearch } from '@docsearch/react'
+import { DocSearch } from "@docsearch/react";
 
 //import '@docsearch/css'
-import './AlgoliaDocSearch.css'
+import "./AlgoliaDocSearch.css";
 
 function AlgoliaDocSearch() {
     return (
@@ -10,7 +10,7 @@ function AlgoliaDocSearch() {
             indexName="godruoyi"
             apiKey="c928a62c38a34b2cbfdb8323de9c9cc9"
         />
-    )
+    );
 }
 
-export default AlgoliaDocSearch
+export default AlgoliaDocSearch;

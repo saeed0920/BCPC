@@ -1,4 +1,4 @@
-# BCPC 
+# BCPC
 
 ## Features
 
@@ -11,13 +11,12 @@
 - 🪲 Markdown And MDX
 - 🏂🏾 Page Compression & Image Optimization
 
-
 ## TODO
+
 - [ ] Add profiles
 - [ ] Add timline
 - [ ] Add Final teams
 
- 
 ### Build from Source
 
 1. Clone the `gblog-template` branch of this repository `git clone -b gblog-template git@github.com:godruoyi/gblog.git`
@@ -35,9 +34,10 @@ With dependencies installed, you can utilize the following npm scripts to manage
 
 For detailed help with Astro CLI commands, visit [Astro's documentation](https://docs.astro.build/en/reference/cli-reference/).
 
-## Thanks 
+## Thanks
 
 Thanks https://github.com/godruoyi
 
 ## License
+
 This project is released under the MIT License. Please read the [LICENSE](https://github.com/godruoyi/gblog/blob/astro/LICENSE) file for more details.

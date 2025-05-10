@@ -19,6 +19,10 @@ import { NavigationLinks } from '@/config'
                 <BrandLogo class="h-full w-auto object-cover rounded-full" />
             </a>
 
+            <div class="flex items-center gap-1 ml-2 w-[7rem] sm:w-[9rem] md:w-[10rem] justify-center text-orange-400">
+              <div id="countdown-days" class="text-md md:text-xl font-bold"></div>
+              <div id="countdown-time" class="text-sm md:text-md flex-grow-[2]"></div>
+            </div>
             <div class="ml-auto md:hidden">
                 <button
                     type="button"
@@ -215,3 +219,31 @@ window.addEventListener('load', () => {
 })
 </script>
 <script is:inline src="/vendor/preline/collapse2.1.0.min.js"></script>
+
+<script>
+// time will contest start 
+  const target = new Date("2025-05-23T09:00:00").getTime();
+
+  function updateCountdown() {
+    const now = Date.now();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      document.getElementById("countdown-days").textContent = "Started!";
+      document.getElementById("countdown-time").textContent = "";
+      clearInterval(timer);
+      return;
+    }
+
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const m = Math.floor((diff / (1000 * 60)) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("countdown-days").textContent = `${d}d`;
+    document.getElementById("countdown-time").textContent = `${h}h ${m}m ${s}s`;
+  }
+
+  const timer = setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
