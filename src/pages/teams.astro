@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '@layouts/BaseLayout.astro'
 import BlogTimeline from '@components/blog/BlogTimeline.astro'
 import { SITE } from '@/config'
-const description = "BCPC' Rules"
+const description = "BCPC's Teams"
 const URL = Astro.url.href
 
 
@@ -18,7 +18,7 @@ const URL = Astro.url.href
         'inLanguage': 'en-US',
         '@id': URL,
         'url': URL,
-        'name': `Rules - ${SITE.title}`,
+        'name': `Teams - ${SITE.title}`,
         'description': description,
         'isPartOf': {
             '@type': 'WebSite',
@@ -28,7 +28,16 @@ const URL = Astro.url.href
         },
     }}
 >
-<section class="h-[20rem]">tst</section>
+<section class="mx-auto max-w-[85rem] mt-10 lg:mt-10 px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
 
-    </BaseLayout>
+    <div class="max-w-3xl mx-auto mb-10 lg:mb-14">
+            <h2 class="text-3xl font-bold text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight">This page will be updated!
+</h2>
+            <p class="mt-4 text-lg group text-pretty text-neutral-600 dark:text-neutral-400">
+                <span class="group-hover:text-yellow-500 group-hover:dark:text-yellow-400"></span> 
+            </p>
+    </div>
+
+</section>
+</BaseLayout>
 
