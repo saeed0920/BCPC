@@ -27,25 +27,19 @@ interface Props {
 ---
 
 <section class="mx-auto grid max-w-[85rem] gap-4 px-4 py-14 sm:px-6 md:grid-cols-2 md:items-center md:gap-8 lg:px-8 2xl:max-w-full">
-    <div>
-        <h1 class="block text-balance text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-4xl lg:text-6xl lg:leading-tight">
+    <div class="flex flex-col gap-2 items-start">
+        <h1 class="block text-balance text-3xl font-bold tracking-tight  sm:text-3xl lg:text-6xl lg:leading-tight">
             <Fragment set:html={title} />
         </h1>
         {subTitle && (
-            <p class="mt-6 text-pretty text-lg leading-relaxed text-neutral-700 dark:text-neutral-400 lg:w-4/5">
+            <p class="mt-2 sm:mt-6 text-pretty text-lg leading-relaxed text-neutral-700 dark:text-neutral-400 lg:w-4/5">
             <Fragment set:html={subTitle} />
             </p>
         )}
 
-        <div class="mt-7 grid w-full gap-3 sm:inline-flex">
-            {primaryBtn && <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />}
-            {secondaryBtn && <SecondaryCTA title={secondaryBtn} url={secondaryBtnURL} />}
-        </div>
-    </div>
-
-    <div class="w-full hidden md:block">
+        <div class="my-4 md:hidden block">
         <div class="top-12 overflow-hidden w-full md:ml-4 flex justify-center">
-            {src && alt && (
+            {src ? src && alt && (
                 <Image
                     src={src}
                     alt={alt}
@@ -55,7 +49,30 @@ interface Props {
                     format="avif"
                     disableBlur={true}
                 />
-            )}
+            ) :   <slot /> }
+        </div>
+    </div>
+
+
+        <div class="mt-7 grid w-full gap-3 sm:inline-flex">
+            {primaryBtn && <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />}
+            {secondaryBtn && <SecondaryCTA title={secondaryBtn} url={secondaryBtnURL} />}
+        </div>
+    </div>
+
+    <div class="w-full hidden md:block">
+        <div class="top-12 overflow-hidden w-full md:ml-4 flex justify-center">
+            {src ? src && alt && (
+                <Image
+                    src={src}
+                    alt={alt}
+                    class="h-full w-[320px] scale-100 object-cover object-center"
+                    draggable="false"
+                    loading="eager"
+                    format="avif"
+                    disableBlur={true}
+                />
+            ) :   <slot /> }
         </div>
     </div>
 

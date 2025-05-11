@@ -8,18 +8,40 @@ import HeroSectionAlt from '@components/ui/sections/HeroSectionAlt.astro'
 import Profile from '@components/Profile.astro'
 import blogHeroImg from '@images/home.png'
 import { teams } from '../teamProfile.ts' 
+const newTitle =`
+<div class="flex flex-grow gap-[.1rem] sm:gap-2">
+<p class="header-word text-[#159246] text-md text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium first-letter:text-3xl md:first-letter:text-5xl   first-letter:leading-none">
+  Birjand
+</p>
+<p class="header-word  text-[#364e6a] text-md text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium first-letter:text-3xl  md:first-letter:text-5xl first-letter:leading-none">
+  Collegiate
+</p>
+<p class="header-word  text-[#c49319] text-md text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium first-letter:text-3xl md:first-letter:text-5xl  first-letter:leading-none">
+  Programming
+</p>
+<p class="header-word  text-[#972d25] text-md text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium first-letter:text-3xl  md:first-letter:text-5xl first-letter:leading-none">
+  Contest
+</p></div>`
 
 ---
 
+
 <BaseLayout>
     <HeroSection
-        title=`<span class="text-yellow-500 dark:text-yellow-400"><b>B</b>irjand Collegiate Programming Contest</span>`
+        title=`${newTitle}`
         subTitle=`📅 Khordad 1-2 ,1404`
         primaryBtn="SignUp"
         primaryBtnURL="https://forms.gle/RY1xVbcvSY7eSz6x7"
-        src={blogHeroImg}
         alt="BCPC's log"
-    />
+        >
+  <div class="flex justify-center  flex-col items-start md:items-center space-y-4 text-lg leading-relaxed text-neutral-800 dark:text-neutral-200">
+    <p class="text-2xl md:text-3xl text-[#FFD700] first-letter:text-3xl">🥇 <strong> 1st :</strong>   140M IRR</p>
+    <p class="text-xl md:text-2xl text-[#D7D7D7]">🥈 <strong> 2nd :</strong>  90M IRR</p>
+    <p class="text-lg md:text-xl text-[#A77044]">🥉 <strong> 3rd :</strong>  60M IRR</p>
+  </div>
+
+    </HeroSection>
+
     <FeaturesSection />
 
     <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full">
@@ -41,3 +63,5 @@ import { teams } from '../teamProfile.ts'
     </section>
 
     </BaseLayout>
+
+

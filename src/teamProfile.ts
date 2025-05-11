@@ -20,7 +20,7 @@ export const teams: TeamProfile[] = [
             },
         ],
     },
-{
+    {
         teamName: "Executive",
         headteamUsername: "Taha Khosravi",
         headteamImg: "/img/team/tahakhosravi.jpg",
@@ -42,9 +42,6 @@ export const teams: TeamProfile[] = [
                 img: "/img/team/fariborsjelvegar.jpg",
                 description: "",
             },
-
         ],
-
     },
-
 ];

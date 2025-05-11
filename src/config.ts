@@ -90,7 +90,7 @@ export const SEO = {
         name: SITE.title,
         description: SITE.description,
         isPartOf: {
-           "@type": "WebSite",
+            "@type": "WebSite",
             url: SITE.url,
             name: SITE.title,
             description: SITE.description,

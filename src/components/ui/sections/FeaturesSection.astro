@@ -1,56 +1,30 @@
 ---
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
-const organizers = [
-{
-name : "Park",
-img : "https://api.iconify.design/material-symbols:android-google-home.svg?color=%233f3f3f"
-}
+const promoters = [
+{img : "/logos/computer.png"},
+{img : "/logos/moavenat.png"},
+{img : "/logos/noafarin.png"},
+{img : "/logos/park.png"},
 ]
 const sponsors = [
-{
-name : "Park",
-img : "",
-}
+{img : "/logos/daneshjoyar.png"},
+{img : "/logos/iran-server.png"},
+{img : "/logos/daneshjo.png"},
+{img : "/logos/pazohesh.png"},
 ]
 // grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-
 ---
 
-<section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full hidden">
-    <div class="flex gap-4 items-center justify-center ">
+<section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-5 lg:py-12 2xl:max-w-full">
+        <div class="box flex flex-col w-full lg:w-fit mx-auto  gap-4 justify-center p-4 md:p-5">
+                <div class="grid grid-cols-4 place-items-center lg:flex items-center justify-between p-3 gap-2  bg-neutral-100 dark:bg-[#ffeec6] shadow-md rounded-xl">
+                    {promoters.map(item => <img class="h-[4rem] lg:w-[7rem] lg:h-[7rem] xl:w-[8rem] xl:h-[8rem] object-contain" src={item.img}/>)}
+                </div>
+<div class="place-items-center grid grid-cols-4 lg:flex items-center p-3 justify-between gap-2  bg-neutral-100 dark:bg-[#ffeec6] shadow-md rounded-xl">
+                    {sponsors.map(item => <img class="h-[3rem] lg:w-[5rem] lg:h-[5rem] xl:w-[6rem] xl:h-[6rem] object-contain" src={item.img}/>)}
+                </div>
 
-
-
-    <div class="flex flex-col items-center justify-center gap-y-2 sm:flex-row sm:gap-x-12 sm:gap-y-0 lg:gap-x-24">
-           <div class="max-w-5xl px-4 sm:px-6 lg:px-8 mx-auto">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
-    <HoverBorderGradient client:load  containerClassName="rounded-2xl"
-        as="div"
-        className="flex  flex-col gap-2 p-4 dark:bg-neutral-800 w-[8rem] bg-neutral-100 dark:text-white flex items-center space-x-2"
-        >
-        <img class="" href="" />
-        <span class="">test</span>
-    </HoverBorderGradient>
-                {}
-           </div>
-        </div>
     </div>
-
-<div class="flex flex-col items-center justify-center gap-y-2 sm:flex-row sm:gap-x-12 sm:gap-y-0 lg:gap-x-24">
-           <div class="max-w-5xl px-4 sm:px-6 lg:px-8 mx-auto">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
-    <HoverBorderGradient client:load  containerClassName="rounded-2xl"
-        as="div"
-        className="flex  flex-col gap-2 p-4 dark:bg-neutral-800 w-[8rem] bg-neutral-100 dark:text-white flex items-center space-x-2"
-        >
-        <img class="" href="" />
-        <span class="">test</span>
-    </HoverBorderGradient>
-                {}
-           </div>
-        </div>
-    </div>
-
-</div>
 </section>
 
 <style>
