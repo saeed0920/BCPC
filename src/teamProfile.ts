@@ -4,20 +4,47 @@ export const teams: TeamProfile[] = [
     {
         teamName: "Tech",
         headteamUsername: "Erfan Ghofrani",
-        headteamImg: "src/images/team/erfanghorfani.jpg",
+        headteamImg: "/img/team/erfanghorfani.jpg",
         headTeamDescription: "BackEnd developer",
         teamnumber: 3,
         team: [
             {
                 username: "Saeed Abadiyan",
-                img: "src/images/team/saeedabaiyan.jpg",
+                img: "/img/team/saeedabaiyan.jpg",
                 description: "FrontEnd Developer",
             },
             {
-                username: "Mamad",
-                img: "src/images/team/mamad.jpg",
-                description: "FrontEnd Developer",
+                username: "Mohammad Ghohari",
+                img: "/img/team/mamad.jpg",
+                description: "DevOps",
             },
         ],
     },
+{
+        teamName: "Executive",
+        headteamUsername: "Taha Khosravi",
+        headteamImg: "/img/team/tahakhosravi.jpg",
+        headTeamDescription: "Head",
+        teamnumber: 2,
+        team: [
+            {
+                username: "Ehsan Noferesti",
+                img: "/img/team/ehsannoferesti.jpg",
+                description: "Go Developer",
+            },
+            {
+                username: "Mohammad Hoseini",
+                img: "/img/team/mohammadhoseini.jpg",
+                description: "",
+            },
+            {
+                username: "Fariborz Jelvegar",
+                img: "/img/team/fariborsjelvegar.jpg",
+                description: "",
+            },
+
+        ],
+
+    },
+
 ];

@@ -11,6 +11,7 @@ export const SITE: Site = {
 export const NavigationLinks: NavigationLink[] = [
     //{ name: 'Posts', url: '/posts/' },
     { name: "Home", url: "/" },
+    { name: "Rules", url: "/rules" },
     { name: "Timeline", url: "/timeline/" },
     { name: "Contact", url: "/contact/" },
     { name: "About", url: "/about/" },
@@ -21,10 +22,11 @@ export const FooterLinks = [
     {
         section: "Blog",
         links: [
-            { name: "Bircpc", url: "https://blog.bircpc.ir" },
+            { name: "Rules", url: "/rules" },
             { name: "Timeline", url: "/timeline/" },
             { name: "Contact Us", url: "/contact/" },
             { name: "About Us", url: "/about/" },
+            { name: "Bircpc", url: "https://blog.bircpc.ir" },
         ],
     },
     {

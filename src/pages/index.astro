@@ -14,9 +14,9 @@ import { teams } from '../teamProfile.ts'
 <BaseLayout>
     <HeroSection
         title=`<span class="text-yellow-500 dark:text-yellow-400">BCPC</span>`
-        subTitle=`Learn. Connect. Create. <br>  📅 May 22–23, 2025`
+        subTitle=`<b class="text-2xl">Birjand</b> Collegiate Programming Contest <br>  📅 Khordad 22–23, 2025`
         primaryBtn="SignUp"
-        primaryBtnURL="/posts"
+        primaryBtnURL="https://forms.gle/RY1xVbcvSY7eSz6x7"
         src={blogHeroImg}
         alt="BCPC's log"
     />
@@ -31,7 +31,7 @@ import { teams } from '../teamProfile.ts'
             A group of passionate individuals dedicated to making this event unforgettable
             </p>
         </div>
-        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="grid gap-5 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
             {
                 teams.map(b => (
                     <Profile {...b} />

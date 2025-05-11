@@ -4,12 +4,18 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '@layouts/BaseLayout.astro'
 import BlogTimeline from '@components/blog/BlogTimeline.astro'
 import { SITE } from '@/config'
-
-const posts: CollectionEntry<'posts'>[] = (await getCollection('posts')).sort(
-    (a: CollectionEntry<'posts'>, b: CollectionEntry<'posts'>) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-)
-const description = `Godruoyi All Posts, Currently written ${posts.length} articles. Let's keep up the good work!`
+const description = "The TimeLine of the event"
 const URL = Astro.url.href
+
+
+const times = [
+{
+header : "SignUp teams",
+time : "Ordibehesht 24",
+icon : "https://api.iconify.design/material-symbols-light:assignment-turned-in.svg?color=%233f3f3f",
+},
+
+]
 ---
 
 <BaseLayout
@@ -35,9 +41,18 @@ const URL = Astro.url.href
         <div class="max-w-3xl mx-auto mb-10 lg:mb-14">
             <h2 class="text-3xl font-bold text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight">Timeline</h2>
             <p class="mt-4 text-lg group text-pretty text-neutral-600 dark:text-neutral-400">
-                <span class="group-hover:text-yellow-500 group-hover:dark:text-yellow-400">{posts.length}</span> 
+                <span class="group-hover:text-yellow-500 group-hover:dark:text-yellow-400"></span> 
             </p>
+<div class="relative border-l border-gray-300 pl-6 ml-4">
+    {times.map(line => 
+    <div class="mb-10">
+    <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 top-1"></div>
+    <h3 class="flex gap-2 dark:text-neutral-400 text-lg font-semibold">
+    <img class="w-8 h-8" src={line.icon} />
+    {line.header}</h3>
+    <time class=" text-sm text-gray-500">{line.time}</time>
+    </div>)}
+</div>
         </div>
-        {posts.map(p => <BlogTimeline blog={p} />)}
     </section>
 </BaseLayout>

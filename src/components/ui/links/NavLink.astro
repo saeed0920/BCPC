@@ -8,13 +8,15 @@ interface Props {
 
 const path = url.startsWith('http') ? new URL(url).pathname : url
 const id = path === '/' ? 'home' : path.replace(/^\/|\/$/g, '')
+const isHome = Astro.url.pathname === "/";
 ---
 
 <a
     id={id}
     href={url}
     data-astro-prefetch
-    class="rounded-lg text-base font-medium text-neutral-600 outline-none ring-zinc-500 hover:text-neutral-500 focus-visible:ring dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-500 dark:focus:outline-none md:py-3 md:text-sm 2xl:text-base"
+    class={ isHome && id==="home" ? "text-orange-400 dark:text-orange-300" : "" + " rounded-lg text-base font-medium text-neutral-600 outline-none ring-zinc-500 hover:text-neutral-500 focus-visible:ring dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-500 dark:focus:outline-none md:py-3 md:text-sm 2xl:text-base"}
+
 >
   {name}
 </a>

@@ -1,42 +1,25 @@
 ---
 import type { TeamProfile , TeamMember } from '@src/types.ts'
 import ProfileModal from './ProfileModal.astro';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'free-astro-components'
-
 const { teamName, headteamUsername, headteamImg, headTeamDescription, teamnumber, team } = Astro.props as TeamProfile;
-let modalData = { img: "", username: "", description: "" };
+
 ---
 <div class="group flex flex-col bg-neutral-100 dark:bg-neutral-900/30 transition-colors rounded-xl hover:group" >
     <div class="box p-4 md:p-5">
         <div class="flex">
             <div class="grow ms-5">
 
-
-<Modal id="modal-id">
-  <ModalHeader>
-        <img src={modalData.img} alt={modalData.username}/>
-        {modalData.username}
-  </ModalHeader>
-  <ModalBody>
-    <p>
-        {modalData.description}
-    </p>
-  </ModalBody>
-  <ModalFooter>
-  </ModalFooter>
-</Modal>
-
                 <span class="block text-2xl  font-bold text-neutral-600 transition-colors group-hover:text-orange-400 dark:text-neutral-300 dark:group-hover:text-orange-300">{teamName}</span>
                 <div class="mt-1 block text-neutral-500 transition-colors group-hover:text-neutral-600 dark:text-neutral-500 dark:group-hover:text-neutral-400">
-                    <h1 class="flex flex-col items-center">
+                    <h1  class="flex  flex-col items-center">
                         <img class="rounded-full w-[6rem] h-[6rem] mb-2 object-cover outline" alt={headteamUsername} src={headteamImg} />
                         {headteamUsername}
                     </h1>
                     <hr class="my-4">
                     { team.map((user : TeamMember) =>
-                <div class="flex gap-2 items-center m-2 py-2">
-                        <img class="rounded-full mr-2 w-[4rem] h-[4rem] object-cover" alt={user.username} src={user.img} />
-                    <span>{user.username}</span>
+                    <div class="flex [&:hover>img]:scale-[1.5] [&:hover>span]:ml-2 transition-all gap-2 items-center m-2 py-2">
+                        <img class="rounded-full mr-2 w-[4rem] h-[4rem] object-cover transition-all" alt={user.username} src={user.img} />
+                    <span class="transition-all">{user.username}</span>
                 </div>
                     )
                     }
@@ -46,16 +29,3 @@ let modalData = { img: "", username: "", description: "" };
     </div>
 </div>
 
-<script>
-  // Find our component DOM on the page.
-  const buttons = document.querySelectorAll('.Button');
-
-  // Add event listeners to fire confetti when a button is clicked.
-  buttons.forEach((button) => {
-button.addEventListener('click', (e) => {
-console.log(e)
-console.log('test')
-
-});
-  });
-</script>

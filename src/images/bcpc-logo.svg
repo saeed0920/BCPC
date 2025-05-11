@@ -1,11 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4961" height="3508" viewBox="0 0 4961 3508">
+<svg xmlns="http://www.w3.org/2000/svg" width="4961" height="3508" viewBox="0 0 4961 3508">
   <defs>
     <style>
       .cls-1 {
-        stroke-linejoin: round;
-        stroke-width: 1px;
         font-size: 1008.333px;
-        stroke: url(#linear-gradient);
         fill: #159447;
         font-family: "Electro Holic";
         text-transform: uppercase;
@@ -23,12 +20,6 @@
         fill: #b22f25;
       }
     </style>
-    <linearGradient id="linear-gradient" x1="66" y1="1769" x2="4895" y2="1769" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#149447"/>
-      <stop offset="0.484" stop-color="#4b82c3"/>
-      <stop offset="0.59" stop-color="#fcb916"/>
-      <stop offset="1" stop-color="#b22e25"/>
-    </linearGradient>
   </defs>
-  <text id="bcpc" class="cls-1" transform="translate(37.077 2478.286) scale(1.995)">b<tspan class="cls-2">c<tspan class="cls-3">p<tspan class="cls-4">c</tspan></tspan></tspan></text>
+  <text id="bcpc" class="cls-1" transform="matrix(2.001, 0, 0, 2.001, 31.467, 2480.689)">b<tspan class="cls-2">c<tspan class="cls-3">p<tspan class="cls-4">c</tspan></tspan></tspan></text>
 </svg>

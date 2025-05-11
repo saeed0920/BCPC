@@ -1,0 +1,34 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { getCollection } from 'astro:content'
+import BaseLayout from '@layouts/BaseLayout.astro'
+import BlogTimeline from '@components/blog/BlogTimeline.astro'
+import { SITE } from '@/config'
+const description = "BCPC' Rules"
+const URL = Astro.url.href
+
+
+---
+<BaseLayout
+    title="Timeline"
+    description={description}
+    structuredData={{
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        'inLanguage': 'en-US',
+        '@id': URL,
+        'url': URL,
+        'name': `Timeline - ${SITE.title}`,
+        'description': description,
+        'isPartOf': {
+            '@type': 'WebSite',
+            'url': SITE.url,
+            'name': SITE.title,
+            'description': SITE.description,
+        },
+    }}
+>
+<section class="h-[20rem]">tst</section>
+
+    </BaseLayout>
+

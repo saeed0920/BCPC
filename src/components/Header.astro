@@ -3,6 +3,13 @@ import NavLink from '@components/ui/links/NavLink.astro'
 import BrandLogo from '@components/ui/logos/BrandLogo.astro'
 import Theme from '@components/ui/logos/Theme.astro'
 import { NavigationLinks } from '@/config'
+import { Select } from 'free-astro-components'
+
+import { getRelativeLocaleUrl } from 'astro:i18n';
+const aboutURL = getRelativeLocaleUrl("fa", "about");
+
+const currentLang = Astro.url.pathname.split('/')[1];
+const languages = ["en" ,"fa"];
 ---
 
 <header class="sticky inset-x-0 top-4 z-50 flex w-full flex-wrap text-sm md:flex-nowrap md:justify-start xl:top-6">
@@ -19,7 +26,7 @@ import { NavigationLinks } from '@/config'
                 <BrandLogo class="h-full w-auto object-cover rounded-full" />
             </a>
 
-            <div class="flex items-center gap-1 ml-2 w-[7rem] sm:w-[9rem] md:w-[10rem] justify-center text-orange-400">
+            <div class="flex items-center gap-1 ml-2 w-[9rem] sm:w-[13rem] justify-center text-orange-400">
               <div id="countdown-days" class="text-md md:text-xl font-bold"></div>
               <div id="countdown-time" class="text-sm md:text-md flex-grow-[2]"></div>
             </div>
@@ -65,7 +72,8 @@ import { NavigationLinks } from '@/config'
             <span class="inline-block md:hidden">
                 <Theme />
             </span>
-        </div>
+
+      </div>
 
         <div
             id="navbar-collapse-with-animation"
@@ -75,7 +83,7 @@ import { NavigationLinks } from '@/config'
                 class="mt-5 flex flex-col gap-x-0 gap-y-4 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 lg:gap-x-7 md:gap-y-0 md:ps-7"
             >
                 {NavigationLinks.map(link => (
-                    <NavLink url={link.url} name={link.name} />
+                <NavLink url={link.url} name={link.name} />
                 ))}
                 <span class="hidden md:inline-block ml-[-1.5rem]">
                     <Theme />
