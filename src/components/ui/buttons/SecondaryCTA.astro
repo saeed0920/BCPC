@@ -17,6 +17,7 @@ const darkClasses = 'dark:border-neutral-700 dark:bg-zinc-700 dark:text-neutral-
 ---
 
 <a
+    {...Astro.props}
     class={`${baseClasses} ${borderClasses} ${bgColorClasses} ${hoverClasses} ${disableClasses} ${fontSizeClasses} ${ringClasses} ${darkClasses}`}
     href={url}
 >

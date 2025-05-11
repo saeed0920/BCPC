@@ -6,7 +6,7 @@ import BlogTimeline from '@components/blog/BlogTimeline.astro'
 import { SITE } from '@/config'
 const description = "BCPC' Rules"
 const URL = Astro.url.href
-
+import SecondaryCTA from '@components/ui/buttons/SecondaryCTA.astro'
 
 ---
 <BaseLayout
@@ -28,7 +28,35 @@ const URL = Astro.url.href
         },
     }}
 >
-<section class="h-[20rem]">tst</section>
 
+<section class="mx-auto max-w-[85rem] mt-10 lg:mt-10 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 flex flex-col gap-5 items-start">
+
+<iframe
+    src="/rules.pdf#toolbar=0"
+	style="border:none"
+	title="Non-downloadable PDF Viewer"
+></iframe>
+<SecondaryCTA
+        title="Download PDF"
+        url="/rules.pdf" download />
+
+</section>
     </BaseLayout>
 
+<style>
+    iframe {
+      width: 100%;
+      height: auto;
+      border: none;
+      aspect-ratio: 6 / 9;
+    }
+    .download-btn {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
