@@ -18,7 +18,7 @@ const { teamName, headteamUsername, headteamImg, headTeamDescription, teamnumber
                     <hr class="my-4">
                     { team.map((user : TeamMember) =>
                     <div class="flex [&:hover>img]:scale-[1.5] [&:hover>span]:ml-2 transition-all gap-2 items-center m-2 py-2">
-                        <img class="rounded-full mr-2 w-[4rem] h-[4rem] object-cover transition-all" alt={user.username} src={user.img} />
+                        <img class="rounded-full mr-2 w-[5rem] h-[5rem] object-cover transition-all" alt={user.username} src={user.img} />
                     <span class="transition-all">{user.username}</span>
                 </div>
                     )
