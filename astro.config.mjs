@@ -13,9 +13,15 @@ import { transformerCopyButton } from "@rehype-pretty/transformers";
 import { SITE } from "./src/config.ts";
 import { remarkReadingTime } from "./src/support/plugins.ts";
 import { uploadAssetsToS3 } from "./src/support/uploader.ts";
+import react from '@astrojs/react';
 
 export default defineConfig({
-    i18n: {
+ integrations: [
+   react({
+            experimentalReactChildren: true,
+        }),
+    ],
+  i18n: {
         locales: ["en", "fa"],
         defaultLocale: "en",
         routing: {

@@ -1,8 +1,5 @@
 ---
-import type { CollectionEntry } from 'astro:content'
-import { getCollection } from 'astro:content'
 import BaseLayout from '@layouts/BaseLayout.astro'
-import BlogTimeline from '@components/blog/BlogTimeline.astro'
 import { SITE } from '@/config'
 const description = "BCPC' Rules"
 const URL = Astro.url.href
@@ -10,7 +7,7 @@ import SecondaryCTA from '@components/ui/buttons/SecondaryCTA.astro'
 
 ---
 <BaseLayout
-    title="Timeline"
+    title="Rules"
     description={description}
     structuredData={{
         '@context': 'https://schema.org',
@@ -30,23 +27,23 @@ import SecondaryCTA from '@components/ui/buttons/SecondaryCTA.astro'
 >
 
 <section class="mx-auto max-w-[85rem] mt-10 lg:mt-10 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 flex flex-col gap-5 items-start">
+<SecondaryCTA
+        title="Download PDF"
+        url="/rules.pdf" download />
 
 <iframe
     src="/rules.pdf#toolbar=0"
 	style="border:none"
 	title="Non-downloadable PDF Viewer"
 ></iframe>
-<SecondaryCTA
-        title="Download PDF"
-        url="/rules.pdf" download />
+    </section>
 
-</section>
     </BaseLayout>
 
 <style>
     iframe {
       width: 100%;
-      height: auto;
+      height: 35rem;
       border: none;
       aspect-ratio: 6 / 9;
     }

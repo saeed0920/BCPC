@@ -13,8 +13,8 @@ export const NavigationLinks: NavigationLink[] = [
     { name: "Home", url: "/" },
     { name: "Rules", url: "/rules" },
     { name: "Timeline", url: "/timeline/" },
-    { name: "Contact", url: "/contact/" },
-    { name: "About", url: "/about/" },
+    { name: "Contact us", url: "/contact/" },
+    { name: "About us", url: "/about/" },
     //{ name: 'Friends', url: '/friends/' },
 ];
 
@@ -24,8 +24,8 @@ export const FooterLinks = [
         links: [
             { name: "Rules", url: "/rules" },
             { name: "Timeline", url: "/timeline/" },
-            { name: "Contact Us", url: "/contact/" },
-            { name: "About Us", url: "/about/" },
+            { name: "Contact us", url: "/contact/" },
+            { name: "About us", url: "/about/" },
             { name: "Bircpc", url: "https://blog.bircpc.ir" },
         ],
     },

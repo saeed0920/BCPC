@@ -33,12 +33,12 @@ export const teams: TeamProfile[] = [
                 description: "Go Developer",
             },
             {
-                username: "Mohammad Hoseini",
+                username: "Mohammad Hosseini",
                 img: "/img/team/mohammadhoseini.jpg",
                 description: "",
             },
             {
-                username: "Fariborz Jelvegar",
+                username: "Fariborz Jelveghar",
                 img: "/img/team/fariborsjelvegar.jpg",
                 description: "",
             },
