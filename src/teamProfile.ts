@@ -42,6 +42,12 @@ export const teams: TeamProfile[] = [
                 img: "/img/team/fariborsjelvegar.jpg",
                 description: "",
             },
+            {
+                username: "Amirreza Salari",
+                img: "/img/team/amirrezasalari.jpg",
+                description: "",
+            },
+
         ],
     },
 ];
