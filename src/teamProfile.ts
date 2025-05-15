@@ -18,6 +18,11 @@ export const teams: TeamProfile[] = [
                 img: "/img/team/mamad.jpg",
                 description: "DevOps",
             },
+            {
+                username: "Elyas Daei Jafary",
+                img: "/img/team/elyas.jpg",
+                description: "Devops",
+            },
         ],
     },
     {
