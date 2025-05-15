@@ -1,0 +1,52 @@
+
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { SITE } from '@/config'
+const description = "ظرفیت مسابقه تکمیل شده است - اطلاع از اخبار از طریق سوپرگروه انجمن"
+const URL = Astro.url.href
+const groupLink = "https://t.me/SSCEUBIR/757" 
+---
+
+<BaseLayout
+  title="ظرفیت تکمیل شده"
+  description={description}
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    'inLanguage': 'fa-IR',
+    '@id': URL,
+    'url': URL,
+    'name': `Registration Full - ${SITE.title}`,
+    'description': description,
+    'isPartOf': {
+      '@type': 'WebSite',
+      'url': SITE.url,
+      'name': SITE.title,
+      'description': SITE.description,
+    },
+  }}
+>
+
+<section class="mx-auto max-w-[85rem] mt-10 lg:mt-10 px-2 py-10 sm:px-6 lg:px-8 lg:py-14" >
+   <div class="text-right">
+      <h2 dir="rtl" class="text-2xl font-bold text-red-600  dark:text-red-400">
+        ظرفیت تکمیل شده!
+      </h2>
+      <p dir="rtl" class="text-sm text-neutral-600 dark:text-neutral-400 mt-2">
+        ثبت‌نام این مرحله به پایان رسیده و ظرفیت تکمیل شده است.
+      </p>
+      <p class="mt-3 text-xs sm:text-sm md:text-base text-neutral-700 dark:text-neutral-300">
+        انجمن کامپیوتر هر دوهفته مسابقه برنامه‌نویسی آنلاین و حضوری برگزار می‌کند.
+        برای اطلاع از زمان‌بندی مسابقات آینده، در سوپرگروه انجمن عضو شوید 👇
+      </p>
+      <a
+        href={groupLink}
+        target="_blank"
+        class="inline-block text-sm sm:text-base text-neutral-700 mt-4 bg-blue-600 hover:bg-blue-700 dark:text-neutral-300 underline font-semibold py-2 px-4 rounded-lg transition"
+      >
+        عضویت در سوپرگروه انجمن
+      </a>
+    </div></section>
+
+</BaseLayout>
+
