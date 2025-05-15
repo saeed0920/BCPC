@@ -9,16 +9,16 @@ interface Props {
   noArrow?: boolean
 }
 
-const baseClasses = 'group inline-flex items-center justify-center gap-x-2 rounded-lg px-4 py-3 text-sm font-bold text-neutral-50 ring-zinc-500 transition duration-300 focus-visible:ring outline-none'
+const baseClasses = 'group inline-flex items-center text-neutral-500 justify-center gap-x-2 rounded-lg px-4 py-3 text-sm font-bold text-neutral-50 ring-zinc-500 transition duration-300 focus-visible:ring outline-none'
 const borderClasses = 'border border-transparent'
-const bgColorClasses = 'bg-orange-400 hover:bg-orange-500 active:bg-orange-500 dark:focus:outline-none'
+const bgColorClasses = 'bg-gray-400 dark:focus:outline-none'
 const disableClasses = 'disabled:pointer-events-none disabled:opacity-50'
 const fontSizeClasses = '2xl:text-base'
 const ringClasses = 'dark:ring-zinc-200';
 ---
 
 <a
-    class={`${baseClasses} ${borderClasses} ${bgColorClasses} ${disableClasses} ${fontSizeClasses} ${ringClasses}`}
+    class={`${baseClasses} ${borderClasses} line-through ${bgColorClasses} ${disableClasses} ${fontSizeClasses} ${ringClasses}`}
     href={url}
     data-astro-prefetch
 >
