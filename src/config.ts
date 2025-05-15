@@ -11,6 +11,7 @@ export const SITE: Site = {
 export const NavigationLinks: NavigationLink[] = [
     //{ name: 'Posts', url: '/posts/' },
     { name: "Home", url: "/" },
+    { name: "Teams", url: "/teams" },
     { name: "Rules", url: "/rules" },
     { name: "Timeline", url: "/timeline/" },
     { name: "Contact us", url: "/contact/" },
@@ -23,6 +24,7 @@ export const FooterLinks = [
         section: "Blog",
         links: [
             { name: "Rules", url: "/rules" },
+            { name: "Teams", url: "/teams" },
             { name: "Timeline", url: "/timeline/" },
             { name: "Contact us", url: "/contact/" },
             { name: "About us", url: "/about/" },

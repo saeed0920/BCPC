@@ -16,11 +16,11 @@ const sponsors = [
 ---
 
 <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-5 lg:py-12 2xl:max-w-full">
-        <div class="box flex flex-col w-full lg:w-fit mx-auto  gap-4 justify-center p-4 md:p-5">
-                <div class="grid grid-cols-4 place-items-center lg:flex items-center justify-between p-3 gap-2  bg-neutral-100 dark:bg-[#ffeec6] shadow-md rounded-xl">
+        <div class="box flex flex-col w-full lg:w-fit mx-auto  gap-8 justify-center p-4 md:p-5">
+                <div class="grid grid-cols-4 scale-105 place-items-center lg:flex items-center justify-between p-3 gap-2  bg-neutral-100 dark:bg-[#ffeec6] rounded-xl first-shadow ">
                     {promoters.map(item => <img class="h-[4rem] lg:w-[7rem] lg:h-[7rem] xl:w-[8rem] xl:h-[8rem] object-contain" src={item.img}/>)}
                 </div>
-<div class="place-items-center grid grid-cols-4 lg:flex items-center p-3 justify-between gap-2  bg-neutral-100 dark:bg-[#ffeec6] shadow-md rounded-xl">
+<div class="place-items-center grid grid-cols-4 lg:flex items-center p-3 justify-between gap-2  bg-neutral-100 dark:bg-[#ffeec6] shadow-md rounded-xl second-shadow">
                     {sponsors.map(item => <img class="h-[3rem] lg:w-[5rem] lg:h-[5rem] xl:w-[6rem] xl:h-[6rem] object-contain" src={item.img}/>)}
                 </div>
 
@@ -30,5 +30,15 @@ const sponsors = [
 <style>
     .bg-trans {
         background : transparent !important;
+    }
+    .first-shadow { 
+      box-shadow: 0 0 15px 4px rgba(186, 85, 211, 0.8);
+      padding: 20px;
+        border-radius: 8px;
+    }
+    .second-shadow { 
+  box-shadow: 0 0 20px 5px rgba(0, 191, 191, 0.6);
+  padding: 20px;
+  border-radius: 10px;
     }
 </style>
