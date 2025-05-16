@@ -1,11 +1,50 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 
-const teams = [
-  { name: "Test Team", university: "Birjand" },
+const teams = 
+[
+  { university: 'شوکت', name: 'Code catch ' },
+  { university: 'شوکت', name: 'π²LIFE' },
+  { university: 'شوکت', name: 'CamelCase' },
+  { university: 'شوکت', name: 'The HeisenBugs' },
+  { university: 'شوکت', name: 'New Folder 3' },
+  { university: 'شوکت', name: 'SHIR MOZ' },
+  { university: 'آزاد بیرجند', name: 'Ambassadors' },
+  { university: 'صنعتی بیرجند', name: 'Codezilla' },
+  { university: 'شوکت', name: 'SUM CODE' },
+  { university: 'شوکت', name: 'NFA' },
+  { university: 'آزاد بیرجند', name: 'Bombardiro Crocodilo' },
+  { university: 'شوکت', name: 'Persian Gulf ' },
+  { university: 'آزاد بیرجند', name: 'Bots for bugs' },
+  { university: 'شوکت', name: 'پیام های بازرگانی' },
+  { university: 'شوکت', name: 'seven' },
+  { university: 'شوکت', name: 'Blank Co. LTD' },
+  { university: 'شوکت', name: 'Cl@ss Pointer' },
+  { university: 'شوکت', name: 'The Bug Factory' },
+  { university: 'شوکت', name: 'Newbie dev' },
+  { university: 'شوکت', name: 'TEA team ' },
+  { university: 'بقیه دانشگاه ها', name: 'ایلیا' },
+  { university: 'شوکت', name: '404 Team Not Found' },
+  { university: 'شوکت', name: 'دیوکد' },
+  { university: 'شوکت', name: ' God of PY' },
+  { university: 'بقیه دانشگاه ها', name: 'Ctrl+C' },
+  { university: 'شوکت', name: 'future programmers' }
 ];
+
 
 export default function FinalTeamsTable() {
   const containerRef = useRef(null);
+    const switchUni = (uni : string)=> {
+        switch(uni) {
+          case "شوکت":
+            return "University of Birjand"
+          case "آزاد بیرجند":
+            return "Azad University of Birjand"
+          case "صنعتی بیرجند":
+            return "Birjand University of Technology"
+          default:
+                return "other"
+        }
+    }
 
   return (
     <div
@@ -26,13 +65,13 @@ export default function FinalTeamsTable() {
               <tr>
                 <th
                   scope="col"
-                  className="px-4 py-3 text-left text-sm font-semibold text-neutral-700 dark:text-neutral-300"
+                  className="px-4 py-3 text-left text-lg sm:text-xl font-semibold text-neutral-700 dark:text-neutral-300"
                 >
                   Team Name
                 </th>
                 <th
                   scope="col"
-                  className="px-4 py-3 text-left text-sm font-semibold text-neutral-700 dark:text-neutral-300"
+                  className="px-4 py-3 text-left text-lg sm:text-xl font-semibold text-neutral-700 dark:text-neutral-300"
                 >
                   University
                 </th>
@@ -41,11 +80,11 @@ export default function FinalTeamsTable() {
             <tbody className="bg-white dark:bg-neutral-800 divide-y divide-neutral-300 dark:divide-neutral-700">
               {teams.map(({ name, university }, i) => (
                 <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-neutral-800" : "bg-neutral-50 dark:bg-neutral-900"}>
-                  <td className="p-2 py-4 sm:px-4 sm:py-3 text-neutral-900 dark:text-neutral-100 whitespace-nowrap text-sm sm:text-base">
+                  <td className="p-2 py-2 sm:px-4  text-neutral-900 dark:text-neutral-100 whitespace-nowrap text-sm sm:text-base">
                     {name}
                   </td>
-                  <td className="px-2 py-4 sm:px-4 sm:py-3  text-neutral-900 dark:text-neutral-100 whitespace-nowrap text-sm sm:text-base">
-                    {university}
+                  <td className="px-2 py-4 sm:px-4  text-neutral-900 dark:text-neutral-100 whitespace-nowrap text-sm sm:text-base">
+                    {switchUni(university)}
                   </td>
                 </tr>
               ))}
