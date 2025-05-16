@@ -1,25 +1,25 @@
 ---
 import type { TeamProfile , TeamMember } from '@src/types.ts'
-import ProfileModal from './ProfileModal.astro';
-const { teamName, headteamUsername, headteamImg, headTeamDescription, teamnumber, team } = Astro.props as TeamProfile;
+const { teamName, headteamUsername, headteamImg, headTeamLinkedin , team } = Astro.props as TeamProfile;
 
 ---
 <div class="group flex flex-col bg-neutral-100 dark:bg-neutral-900/30 transition-colors rounded-xl hover:group" >
     <div class="box p-4 md:p-5">
         <div class="flex">
             <div class="grow ms-5">
-
                 <span class="block text-2xl  font-bold text-neutral-600 transition-colors group-hover:text-orange-400 dark:text-neutral-300 dark:group-hover:text-orange-300">{teamName}</span>
                 <div class="mt-1 block text-neutral-500 transition-colors group-hover:text-neutral-600 dark:text-neutral-500 dark:group-hover:text-neutral-400">
-                    <h1  class="flex  flex-col items-center">
+                    <h1  class="flex relative flex-col items-center">
                         <img class="rounded-full w-[6rem] h-[6rem] mb-2 object-cover outline" alt={headteamUsername} src={headteamImg} />
                         {headteamUsername}
+                        <a class="absolute inset-0 cursor-pointer" target="_blank" href={headTeamLinkedin}></a>
                     </h1>
                     <hr class="my-4">
                     { team.map((user : TeamMember) =>
-                    <div class="flex [&:hover>img]:scale-[1.5] [&:hover>span]:ml-2 transition-all gap-2 items-center m-2 py-2">
+                    <div class="flex [&:hover>img]:scale-[1.5] relative [&:hover>span]:ml-2 transition-all gap-2 items-center m-2 py-2">
                         <img class="rounded-full mr-2 w-[5rem] h-[5rem] object-cover transition-all" alt={user.username} src={user.img} />
                     <span class="transition-all">{user.username}</span>
+                        <a class={`${user.linkedin.length > 1 ? "cursor-pointer " :"pointer-events-none cursor-auto"}  absolute inset-0 `} target="_blank" href={user.linkedin}></a>
                 </div>
                     )
                     }

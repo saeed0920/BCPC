@@ -33,12 +33,14 @@ export interface User {
 export interface TeamMember {
     username: string;
     img: string;
+    linkedin : string;
     description: string;
 }
 
 export interface TeamProfile {
     teamName: string;
     headteamUsername: string;
+    headTeamLinkedin : string;
     headteamImg: string;
     headTeamDescription: string;
     teamnumber: number;

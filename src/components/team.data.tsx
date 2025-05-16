@@ -12,7 +12,7 @@ const teams =
   { university: 'صنعتی بیرجند', name: 'Codezilla' },
   { university: 'شوکت', name: 'SUM CODE' },
   { university: 'شوکت', name: 'NFA' },
-  { university: 'آزاد بیرجند', name: 'Bombardiro Crocodilo' },
+  { university: 'آزاد بیرجند', name: 'Bombardino Crocodilo' },
   { university: 'شوکت', name: 'Persian Gulf ' },
   { university: 'آزاد بیرجند', name: 'Bots for bugs' },
   { university: 'شوکت', name: 'پیام های بازرگانی' },
