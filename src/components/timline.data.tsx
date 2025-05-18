@@ -54,8 +54,8 @@ const timelineFR = [
   },
   {
     time: "10:00 – 11:30 AM",
-    title: "Opening Ceremony & Workshops",
-    description: "Kick-off speeches followed by engaging technical workshops",
+    title: "Workshops",
+    description: "Let the Learning Begin",
     image: "/img/timeline/open2.jpg",
   },
   {
@@ -65,14 +65,21 @@ const timelineFR = [
     image: "/img/timeline/lunch.jpg",
   },
   {
-    time: "1:30 – 3:00 PM",
-    title: "Panel Discussion & Opening Talk",
-    description: "Inspiring talks and a panel discussion with tech experts",
-    image: "/img/timeline/workshop.jpg",
+    time: "1:30 – 2:00 PM",
+    title: "Opening Ceremony",
+    description: "Welcome to the Opening Ceremony",
+    image: "/img/timeline/art.jpg",
   },
+{
+    time: "2:00 – 3:00 PM",
+    title: "Discussion Panel",
+    description: "panel discussion with tech experts",
+    image: "/img/timeline/workshop2.jpg",
+  },
+
   {
     time: "3:00 – 4:45 PM",
-    title: "Calm Zone",
+    title: "Chill Zone",
     description: "A peaceful break area with network!, games, and rest space",
     image: "/img/timeline/team3.jpg",
   },
@@ -80,7 +87,7 @@ const timelineFR = [
     time: "4:45 – 5:00 PM",
     title: "Team Setup",
     description: "Teams settle into their stations and prepare for the contest",
-    image: "/img/timeline/Taha.jpg",
+    image: "/img/timeline/team10.jpg",
   },
   {
     time: "5:00 – 7:00 PM",
