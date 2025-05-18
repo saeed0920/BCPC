@@ -18,14 +18,14 @@ export const teams: TeamProfile[] = [
             {
                 username: "Mohammad Ghohari",
                 img: "/img/team/mamad.jpg",
-                linkedin: "",
-                description: "DevOps",
+                linkedin: "https://www.linkedin.com/in/mohammadgohari",
+                description: "",
             },
             {
                 username: "Elyas Daei Jafary",
                 img: "/img/team/elyas.jpg",
                 linkedin: "https://www.linkedin.com/in/elyasdj/",
-                description: "FrontEnd Developer",
+                description: "",
             },
         ],
     },

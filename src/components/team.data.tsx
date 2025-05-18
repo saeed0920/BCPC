@@ -22,7 +22,6 @@ const teams =
   { university: 'شوکت', name: 'The Bug Factory' },
   { university: 'شوکت', name: 'Newbie dev' },
   { university: 'شوکت', name: 'TEA team ' },
-  { university: 'بقیه دانشگاه ها', name: 'ایلیا' },
   { university: 'شوکت', name: '404 Team Not Found' },
   { university: 'شوکت', name: 'دیوکد' },
   { university: 'شوکت', name: ' God of PY' },
