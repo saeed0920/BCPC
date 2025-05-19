@@ -4,7 +4,7 @@ const teams =
 [
   { university: 'شوکت', name: 'Code catch ' },
   { university: 'شوکت', name: 'π²LIFE' },
-  { university: 'شوکت', name: 'CamelCase' },
+  { university: 'شوکت', name: '404 Brain Not Found' },
   { university: 'شوکت', name: 'The HeisenBugs' },
   { university: 'شوکت', name: 'New Folder 3' },
   { university: 'شوکت', name: 'SHIR MOZ' },
@@ -12,7 +12,7 @@ const teams =
   { university: 'صنعتی بیرجند', name: 'Codezilla' },
   { university: 'شوکت', name: 'SUM CODE' },
   { university: 'شوکت', name: 'NFA' },
-  { university: 'آزاد بیرجند', name: 'Bombardino Crocodilo' },
+  { university: 'آزاد بیرجند', name: 'Back Door' },
   { university: 'شوکت', name: 'Persian Gulf ' },
   { university: 'آزاد بیرجند', name: 'Bots for bugs' },
   { university: 'شوکت', name: 'پیام های بازرگانی' },
@@ -28,7 +28,8 @@ const teams =
   { university: 'شوکت', name: ' God of PY' },
   { university: 'بقیه دانشگاه ها', name: 'Ctrl+C' },
   { university: 'شوکت', name: 'future programmers' },
-  { university: 'شوکت', name: 'Let it happen' }
+  { university: 'شوکت', name: 'Let It Happen' },
+  { university: 'صنعتی بیرجند', name: '¯\\_(ツ)_/¯' }
 ];
 
 
