@@ -20,6 +20,7 @@ const teams =
   { university: 'شوکت', name: 'Blank Co. LTD' },
   { university: 'شوکت', name: 'Cl@ss Pointer' },
   { university: 'شوکت', name: 'The Bug Factory' },
+  { university: 'شوکت', name: 'Faisa' },
   { university: 'شوکت', name: 'Newbie dev' },
   { university: 'شوکت', name: 'TEA team ' },
   { university: 'شوکت', name: '404 Team Not Found' },
@@ -27,7 +28,7 @@ const teams =
   { university: 'شوکت', name: ' God of PY' },
   { university: 'بقیه دانشگاه ها', name: 'Ctrl+C' },
   { university: 'شوکت', name: 'future programmers' },
-  { university: 'شوکت', name: 'Faisa' }
+  { university: 'شوکت', name: 'Let it happen' }
 ];
 
 
