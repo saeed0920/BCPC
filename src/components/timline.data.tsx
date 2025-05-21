@@ -1,124 +1,146 @@
 import { Timeline } from "@/components/ui/timeline";
 
+ const timelineTH = [
+      {
+        time: "8:30 – 9:15 AM",
+        title: "Registration",
+        description: "Participants register and receive event materials.",
+        location: "Talare Velayat",
+        mapLink: "https://maps.google.com/?q=تالار+ولایت",
+        image: "/img/timeline/pre.jpeg",
+      },
+      {
+        time: "9:30 – 11:00 AM",
+        title: "Workshop",
+        description: "Technical workshop session to warm up before the contest.",
+        location: "Talare Velayat",
+        mapLink: "https://maps.google.com/?q=تالار+ولایت",
+        image: "/img/timeline/open.jpg",
+      },
+      {
+        time: "11:00 AM – 12:00 PM",
+        title: "Pack Distribution",
+        description: "Participants receive welcome packs.",
+        location: "Talare Velayat",
+        mapLink: "https://maps.google.com/?q=تالار+ولایت",
+        image: "/img/timeline/team3.jpg",
+      },
+      {
+        time: "12:00 – 2:00 PM",
+        title: "Lunch Break",
+        description: "Lunch at the Cultural Affairs building.",
+        location: "Cultural Affairs Office",
+        mapLink: "https://maps.google.com/?q=معاونت+فرهنگی",
+        image: "/img/timeline/lunch.jpg",
+      },
+      {
+        time: "2:00 – 3:30 PM",
+        title: "Opening Ceremony & Panel",
+        description: "Opening event and expert panel discussion.",
+        location: "Talare Farhang",
+        mapLink: "https://maps.google.com/?q=تالار+فرهنگ",
+        image: "/img/timeline/art.jpg",
+      },
+      {
+        time: "3:30 – 5:30 PM",
+        title: "Chill Zone",
+        description: "Relax and enjoy games or rest in a peaceful space.",
+        location: "Faculty of Engineering",
+        mapLink: "https://maps.google.com/?q=دانشکده+مهندسی",
+        image: "/img/timeline/workshop2.jpg",
+      },
+      {
+        time: "5:45 – 6:00 PM",
+        title: "Team Setup",
+        description: "Teams prepare at the contest site.",
+        location: "Central Library Site",
+        mapLink: "https://maps.google.com/?q=سایت+مرکزی+کتابخانه",
+        image: "/img/timeline/team10.jpg",
+      },
+      {
+        time: "6:00 – 7:00 PM",
+        title: "Practice Contest",
+        description: "Trial contest to get familiar with the environment.",
+        location: "Central Library Site",
+        mapLink: "https://maps.google.com/?q=سایت+مرکزی+کتابخانه",
+        image: "/img/timeline/team2.jpeg",
+      },
+    ];
+
+
 const timelineFR = [
   {
     time: "7:00 – 7:30 AM",
-    title: "Team Arrival",
-    description: "Teams arrive at the venue and check in for the competition day.",
+    title: "Photography & Check-in",
+    description: "Check-in and group photos.",
+    location: "Library, 1st Floor",
+    mapLink: "https://maps.google.com/?q=کتابخانه+دانشگاه",
     image: "/img/timeline/team7.jpg",
   },
   {
     time: "7:30 – 8:00 AM",
-    title: "Team Setup",
-    description: "Teams settle into their assigned stations and prepare for the contest.",
+    title: "Final Setup",
+    description: "Teams finalize setup before the contest.",
+    location: "Central Library Site",
+    mapLink: "https://maps.google.com/?q=سایت+مرکزی+کتابخانه",
     image: "/img/timeline/team5.jpg",
   },
   {
     time: "8:00 AM – 1:00 PM",
     title: "BCPC Contest",
-    description: "The official programming contest begins. Teams solve algorithmic challenges under time pressure.",
+    description: "Main programming contest session.",
+    location: "Central Library Site",
+    mapLink: "https://maps.google.com/?q=سایت+مرکزی+کتابخانه",
     image: "/img/timeline/team1.jpeg",
   },
-  {
-    time: "1:00 – 2:30 PM",
-    title: "Lunch Break",
-    description: "A relaxing lunch after an intense contest session.",
+    {
+    time: "1:45 – 3:00 PM",
+    title: "Lunch & Rest",
+    description: "Lunch and short rest break.",
+    location: "Brothers' Cafeteria (Self)",
+    mapLink: "https://maps.google.com/?q=سلف+برادران",
     image: "/img/timeline/taha2.jpg",
   },
   {
-    time: "2:30 – 5:30 PM",
-    title: "Closing Ceremony",
-    description: "Final remarks, winner announcements, and acknowledgments.",
-    image: "/img/timeline/open.jpg",
+    time: "3:00 – 5:30 PM",
+    title: "Final Ceremony",
+    description: "Award ceremony and acknowledgments.",
+    location: "Talare Farhang",
+    mapLink: "https://maps.google.com/?q=تالار+فرهنگ",
+    image: "/img/timeline/closing.jpeg",
   },
   {
     time: "5:30 – 6:00 PM",
-    title: "Evening Refreshments",
-    description: "Light snacks and time to socialize after the event.",
+    title: "Khosh Geldin",
+    description: "Farewell and closing gathering.",
+    location: "Talare Farhang",
+    mapLink: "https://maps.google.com/?q=تالار+فرهنگ",
     image: "/img/timeline/coffee.jpg",
-  },
-];
-
-  const timelineTH =  [
-  {
-    time: "8:00 – 9:30 AM",
-    title: "Registration",
-    description: "Participants arrive, check in, and receive their welcome packages",
-    image: "/img/timeline/pre.jpeg",
-  },
-  {
-    time: "9:30 – 10:00 AM",
-    title: "Morning Break",
-    description: "Light refreshments and time to relax before the sessions begin",
-    image: "/img/timeline/chill2.jpg",
-  },
-  {
-    time: "10:00 – 11:30 AM",
-    title: "Workshops",
-    description: "Let the Learning Begin",
-    image: "/img/timeline/open2.jpg",
-  },
-  {
-    time: "12:00 – 1:30 PM",
-    title: "Lunch Break",
-    description: "Enjoy lunch and connect with fellow participants",
-    image: "/img/timeline/lunch.jpg",
-  },
-  {
-    time: "1:30 – 2:00 PM",
-    title: "Opening Ceremony",
-    description: "Welcome to the Opening Ceremony",
-    image: "/img/timeline/art.jpg",
-  },
-{
-    time: "2:00 – 3:00 PM",
-    title: "Discussion Panel",
-    description: "panel discussion with tech experts",
-    image: "/img/timeline/workshop2.jpg",
-  },
-
-  {
-    time: "3:00 – 4:45 PM",
-    title: "Chill Zone",
-    description: "A peaceful break area with network!, games, and rest space",
-    image: "/img/timeline/team3.jpg",
-  },
-  {
-    time: "4:45 – 5:00 PM",
-    title: "Team Setup",
-    description: "Teams settle into their stations and prepare for the contest",
-    image: "/img/timeline/team10.jpg",
-  },
-  {
-    time: "5:00 – 7:00 PM",
-    title: "Practice Contest",
-    description: "Get familiar with the contest environment in a mock round",
-    image: "/img/timeline/team2.jpeg",
   },
 ];
 
 
 export function TimelineDemo() {
   const data = [
-{
-      title: "Sign up",
-      content: (
- <div className="p-6 flex flex-col gap-4 xl:flex-row justify-between">
-        <div>
-          <h2 className="text-2xl font-bold text-neutral-700 dark:text-neutral-200"> 
-            Registration is Open!
-          </h2>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-2">
-            Sign up from <strong>22 Ordibehesht</strong> to <strong>25 Ordibehesht</strong>
-          </p>
-          <p className="mt-3 text-neutral-600 dark:text-neutral-300">
-            Get ready for an exciting ICPC-style contest. Make sure to complete your registration before the deadline.
-          </p>
-        </div>       
-            <img src="/img/timeline/signup.jpg" className="w-full h-[8rem] xl:w-[20rem] xl:h-full object-cover rounded-lg shadow shadow-neutral-500"/> 
-</div>
-),
-    },
+//{
+//      title: "Sign up",
+//      content: (
+// <div className="p-6 flex flex-col gap-4 xl:flex-row justify-between">
+//        <div>
+//          <h2 className="text-2xl font-bold text-neutral-700 dark:text-neutral-200"> 
+//            Registration is Open!
+//          </h2>
+//          <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-2">
+//            Sign up from <strong>22 Ordibehesht</strong> to <strong>25 Ordibehesht</strong>
+//          </p>
+//          <p className="mt-3 text-neutral-600 dark:text-neutral-300">
+//            Get ready for an exciting ICPC-style contest. Make sure to complete your registration before the deadline.
+//          </p>
+//        </div>       
+//            <img src="/img/timeline/signup.jpg" className="w-full h-[8rem] xl:w-[20rem] xl:h-full object-cover rounded-lg shadow shadow-neutral-500"/> 
+//</div>
+//),
+//    },
     {
       title: "Thursday",
       content: (

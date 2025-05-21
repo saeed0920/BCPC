@@ -30,8 +30,8 @@ const newTitle =`
     <HeroSection
         title=`${newTitle}`
         subTitle=`📅 Khordad 1-2 ,1404`
-        primaryBtn="SignUp"
-        primaryBtnURL="/registration-full"
+        primaryBtn="Timeline!"
+        primaryBtnURL="/timeline"
         alt="BCPC's log"
         secondaryBtn="Upload the  ID card"
         secondaryBtnURL="https://forms.gle/mmJ4wut6oGUduwjN6"
@@ -56,7 +56,7 @@ const newTitle =`
             A group of passionate individuals dedicated to making this event unforgettable
             </p>
         </div>
-        <div class="grid gap-5 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
+        <div class="grid gap-5 items-start grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
             {
                 teams.map(b => (
                     <Profile {...b} />

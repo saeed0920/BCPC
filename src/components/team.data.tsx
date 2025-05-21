@@ -2,7 +2,7 @@ import { useRef } from "react";
 
 const teams = 
 [
-  { university: 'شوکت', name: 'Code catch ' },
+  { university: 'شوکت', name: 'code cache' },
   { university: 'شوکت', name: 'π²LIFE' },
   { university: 'شوکت', name: '404 Brain Not Found' },
   { university: 'شوکت', name: 'The HeisenBugs' },
@@ -29,7 +29,10 @@ const teams =
   { university: 'بقیه دانشگاه ها', name: 'Ctrl+C' },
   { university: 'شوکت', name: 'future programmers' },
   { university: 'شوکت', name: 'Let It Happen' },
-  { university: 'صنعتی بیرجند', name: '¯\\_(ツ)_/¯' }
+  { university: 'صنعتی بیرجند', name: '¯\\_(ツ)_/¯' },
+  { university: 'شوکت', name: 'Smile' },
+  { university: 'آزاد بیرجند', name: 'Team404' },
+  { university: 'شوکت', name: 'Dastbecode' },
 ];
 
 

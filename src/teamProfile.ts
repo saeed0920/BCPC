@@ -1,6 +1,34 @@
 import type { TeamProfile } from "./types";
 
 export const teams: TeamProfile[] = [
+  {
+        teamName: "Organizing Committee",
+        headteamUsername: "Taha Khosravi",
+        headTeamLinkedin: "https://www.linkedin.com/in/taha-khosravi-28a234333/",
+        headteamImg: "/img/team/tahakhosravi.jpg",
+        headTeamDescription: "Committee Lead",
+        teamnumber: 4,
+        team: [
+            {
+                username: "Erfan Ghofrani",
+                img: "/img/team/erfanghorfani.jpg",
+                linkedin: "https://www.linkedin.com/in/erfanghofrani/",
+                description: "BackEnd Developer",
+            },
+            {
+                username: "Ehsan Noferesti",
+                img: "/img/team/ehsannoferesti.jpg",
+                linkedin: "https://www.linkedin.com/in/ehsan-noferesti-ab535b251/",
+                description: "Go Developer",
+            },
+            {
+                username: "Saeed Abadiyan",
+                img: "/img/team/saeedabaiyan.jpg",
+                linkedin: "https://www.linkedin.com/in/saeed-dev/",
+                description: "FrontEnd Developer",
+            },
+        ],
+    },
     {
         teamName: "Tech",
         headteamUsername: "Erfan Ghofrani",
@@ -32,17 +60,11 @@ export const teams: TeamProfile[] = [
     {
         teamName: "Executive",
         headTeamLinkedin : "https://www.linkedin.com/in/taha-khosravi-28a234333/",
-        headteamUsername: "Taha Khosravi",
-        headteamImg: "/img/team/tahakhosravi.jpg",
+        headteamUsername: "Amirreza Salari",
+        headteamImg: "/img/team/amirrezasalari.jpg",
         headTeamDescription: "Head",
         teamnumber: 2,
         team: [
-            {
-                username: "Ehsan Noferesti",
-                img: "/img/team/ehsannoferesti.jpg",
-                linkedin: "https://www.linkedin.com/in/ehsan-noferesti-ab535b251/",
-                description: "Go Developer",
-            },
             {
                 username: "Mohammad Hosseini",
                 img: "/img/team/mohammadhoseini.jpg",
@@ -56,11 +78,25 @@ export const teams: TeamProfile[] = [
                 description: "",
             },
             {
-                username: "Amirreza Salari",
-                img: "/img/team/amirrezasalari.jpg",
+                username: "Ehsan Noferesti",
+                img: "/img/team/ehsannoferesti.jpg",
+                linkedin: "https://www.linkedin.com/in/ehsan-noferesti-ab535b251/",
+                description: "Go Developer",
+            },
+            {
+                username: "Reza Amiri",
+                img: "/img/team/rezaamiri.jpg",
                 linkedin: "",
                 description: "",
             },
-        ],
+            {
+                username: "Elham Mohamadzadeh",
+                img: "/img/team/elham.jpg",
+                linkedin: "",
+                description: "",
+            },
+            
+],
     },
+
 ];
