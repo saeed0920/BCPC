@@ -237,7 +237,7 @@ window.addEventListener('load', () => {
     const diff = target - now;
 
     if (diff <= 0) {
-      document.getElementById("countdown-days").textContent = "Started!";
+      document.getElementById("countdown-days").textContent = "";
       document.getElementById("countdown-time").textContent = "";
       clearInterval(timer);
       return;
